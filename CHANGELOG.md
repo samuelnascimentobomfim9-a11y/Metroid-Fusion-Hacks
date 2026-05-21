@@ -21,5 +21,4 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 para os "Locations"
 - Adicionados: Destacados os Setores nos textos.
 - Alteração: Algumas pequenas mudanças no texto da "Navigation".
-- Alteração: Os mapas agora são "Hidden" (Só que os mais importantes, Save, Recharge, Navegati-
-on e Aux Room, são vísiveis. Forçando a explorar)
+- Alteração: Os mapas agora são "Hidden" (Só que os mais importantes, Save, Recharge, Navegation e Aux Room, são vísiveis. Forçando a explorar)
