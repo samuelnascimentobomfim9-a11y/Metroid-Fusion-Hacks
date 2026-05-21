@@ -14,8 +14,6 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ## [1.01] - 15/04/2026
 
-### Generator
-
 - Alteração: Traduzido para o Português Brasileiro
 - Alteração: Setores agora são: SETOR-(Número)-(Cores). Tanto para a Sala de Navegação quanto
 para os "Locations"
