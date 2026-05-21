@@ -3,7 +3,7 @@ Meus hacks, traduções ou melhorias do Fusion.
 -------------------------
 Alt Fusion II
 Hack of Metroid Fusion
-Released By:	SamuelNB2026
+Released By: SamuelNB2026
 Category:	Text
 Platform:	GBA
 Patching Information:	No Special Requirements
