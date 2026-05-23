@@ -8,5 +8,5 @@ Meus hacks, traduções ou melhorias do Fusion.
 - Patching Information:	No Special Requirements
 - Genre:	Action > Platformer
 - Patch Version:	2.2
-- Downloads:	467 (No Romhacking)
+- Downloads:	467 (Romhacking)
 - Last Modified:	18 May 2026
