@@ -11,6 +11,7 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 - Corrigido: Textos da Sala de Navegação e outros.
 - Adicionados: Os créditos que estavam faltando.
+- Alteração: Suporte pro MAGE Themes 1.16.0 (Podendo adicionar mais recursos)
 
 ## [1.01] - 15/04/2026
 
