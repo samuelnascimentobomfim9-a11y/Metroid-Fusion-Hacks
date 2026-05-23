@@ -7,11 +7,14 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ### Metroid Alt-Fusion III
 
-## [1.02] - ??/06/2026
+## [1.02] - 23/05/2026
 
-- Corrigido: Textos da Sala de Navegação e outros.
+- Corrigido: Textos da Tela de Pausa, Números 3C; 47 à 49; 67 à 6B.
+- Corrigido: Locations. (Números 0, B e 12.)
 - Adicionados: Os créditos que estavam faltando.
 - Alteração: Suporte pro MAGE Themes 1.16.0 (Podendo adicionar mais recursos)
+- Alteração: Traduzido parcialmente a interface da Tela de Pausa.
+- Alteração: Traduzido o Ending (Final).
 
 ## [1.01] - 15/04/2026
 
