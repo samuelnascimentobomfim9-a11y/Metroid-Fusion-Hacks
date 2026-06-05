@@ -62,3 +62,5 @@ para os "Locations"
 ## Hacks Pequenos
 
 ### Metroid Fusion The Mass
+
+- Aguardando alterações.
