@@ -66,4 +66,10 @@ para os "Locations"
 
 ### Metroid Fusion TS Free Edition & Deluxe Edition
 
+#### [0.1.5] - ??/??/202?
+
 - Aguardando alterações.
+
+#### [0.1] - 05/06/2026
+
+- Adicionados: Novos anúncios na versão Free. Com possibilidade de removê-los na versão Deluxe.
