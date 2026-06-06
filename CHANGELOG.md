@@ -9,6 +9,10 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ### Metroid Alt-Fusion III
 
+#### [1.03] - ??/0?/2026
+
+- Corrigido: A tradução na interface da Tela de Pausa. (Que por algum motivo, não foi importada para o jogo)
+
 #### [1.02] - 23/05/2026
 
 - Corrigido: Textos da Tela de Pausa, Números 3C; 47 à 49; 67 à 6B.
