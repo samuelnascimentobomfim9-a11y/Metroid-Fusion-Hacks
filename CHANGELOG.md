@@ -18,7 +18,7 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 - Corrigido: Textos da Tela de Pausa, Números 3C; 47 à 49; 67 à 6B.
 - Corrigido: Locations. (Números 0, B e 12.)
 - Adicionados: Os créditos que estavam faltando.
-- Alteração: Suporte pro MAGE Themes 1.16.0 (Podendo adicionar mais recursos)
+- Adicionados: Suporte pro MAGE Themes 1.16.0 (Podendo adicionar mais recursos)
 - Alteração: Traduzido parcialmente a interface da Tela de Pausa.
 - Alteração: Traduzido o Ending (Final).
 
