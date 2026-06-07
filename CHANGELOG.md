@@ -1,4 +1,4 @@
-# Change Log
+# Changelog
 
 Todas as alterações relevantes deste projeto serão documentadas neste arquivo.
 
@@ -38,7 +38,7 @@ para os "Locations"
 #### [0.7.8] - ??/0?/2026
 
 - Alteração: Atualização na tradução em PT-BR
-- Alteração: Suporte pro MAGE Themes 1.16.0
+- Adicionados: Suporte pro MAGE Themes 1.16.0
 - Adicionados: Changelog nos créditos.
 
 #### [0.7.7] - 16/05/2026
@@ -73,6 +73,7 @@ para os "Locations"
 #### [0.1.5] - ??/??/202?
 
 - Aguardando alterações.
+- Removido: Minimapa na versão Free.
 
 #### [0.1] - 05/06/2026
 
