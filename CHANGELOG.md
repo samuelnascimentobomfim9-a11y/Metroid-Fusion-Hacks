@@ -35,11 +35,16 @@ para os "Locations"
 
 ### Metroid TX-267 SE
 
-#### [0.7.8] - ??/0?/2026
+#### [0.7.9] - ??/0?/2026
 
 - Alteração: Atualização na tradução em PT-BR
+- Adicionados: Traduções extras (interface da Tela de Pausa e Ending)
+
+#### [0.7.8] - 10/06/2026
+
+- Alteração: Atualização na tradução em PT-BR
+- Corrigido: Revisão gramatical pelo Gemini (do Google LLC), baseado no Glossário.
 - Adicionados: Suporte pro MAGE Themes 1.16.0
-- Adicionados: Changelog nos créditos.
 
 #### [0.7.7] - 16/05/2026
 
