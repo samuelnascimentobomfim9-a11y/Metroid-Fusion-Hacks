@@ -36,10 +36,15 @@ para os "Locations"
 
 ### Metroid TX-267 SE
 
-#### [0.7.9] - ??/0?/2026
+#### [0.8.0] - ??/06/2026
 
-- Alteração: Atualização na tradução em PT-BR
+- Alteração: Tradução em PT-BR no Pause Screen, Monologues e Messages.
 - Adicionados: Traduções extras (interface da Tela de Pausa e Ending)
+
+#### [0.7.9] - 11/06/2026
+
+- Alteração: Traduzido os textos da Navegação, Locations, File Screen e parcialmente Pause Screen.
+- Corrigido: Algumas partes dos textos da Navegação e Pause Screen.
 
 #### [0.7.8] - 10/06/2026
 
