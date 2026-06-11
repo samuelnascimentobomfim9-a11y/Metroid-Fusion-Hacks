@@ -12,6 +12,7 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 #### [1.03] - ??/0?/2026
 
 - Corrigido: A tradução na interface da Tela de Pausa. (Que por algum motivo, não foi importada para o jogo)
+- Removido: Número da versão nos créditos (já que os créditos não tem suporte para os números)
 
 #### [1.02] - 23/05/2026
 
