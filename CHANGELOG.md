@@ -43,7 +43,7 @@ para os "Locations"
 #### [0.7.8] - 10/06/2026
 
 - Alteração: Atualização na tradução em PT-BR
-- Adicionados: Revisão gramatical dos textos traduzidos nova tradução melhorada
+- Adicionados: Revisão gramatical dos textos traduzidos e nova tradução melhorada
 - Adicionados: Suporte pro MAGE Themes 1.16.0
 
 #### [0.7.7] - 16/05/2026
