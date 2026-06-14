@@ -9,10 +9,11 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ### Metroid Alt-Fusion III
 
-#### [1.03] - ??/0?/2026
+#### [1.03] - 14/06/2026
 
 - Corrigido: A tradução na interface da Tela de Pausa. (Que por algum motivo, não foi importada para o jogo)
-- Removido: Número da versão nos créditos (já que os créditos não tem suporte para os números)
+- Corrigido: Ending (Que também não foi exportado). 
+- Removido: Número da versão nos créditos (já que os créditos não tem suporte para os números).
 
 #### [1.02] - 23/05/2026
 
@@ -41,7 +42,7 @@ para os "Locations"
 - Alteração: Atualização na tradução em PT-BR no Messages
 - Adicionados: Traduções extras (interface da Tela de Pausa e Ending)
 
-#### [0.8.0] - 14/06/2026
+#### [0.8.0] - 13/06/2026
 
 - Alteração: Atualização na tradução em PT-BR no Pause Screen.
 - Alteração: Tradução em PT-BR nos Monologues e parcialmente Messages.
