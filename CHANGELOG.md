@@ -9,13 +9,13 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ### Metroid Alt-Fusion III
 
-#### [1.03] - 14/06/2026
+####『1.03』 - 14/06/2026
 
 - Corrigido: A tradução na interface da Tela de Pausa. (Que por algum motivo, não foi importada para o jogo)
 - Corrigido: Ending (Que também não foi exportado). 
 - Removido: Número da versão nos créditos (já que os créditos não tem suporte para os números).
 
-#### [1.02] - 23/05/2026
+#### 『1.02』 - 23/05/2026
 
 - Corrigido: Textos da Tela de Pausa, Números 3C; 47 à 49; 67 à 6B.
 - Corrigido: Locations. (Números 0, B e 12.)
@@ -24,7 +24,7 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 - Alteração: Traduzido parcialmente a interface da Tela de Pausa.
 - Alteração: Traduzido o Ending (Final).
 
-#### [1.01] - 15/04/2026
+#### 『1.01』 - 15/04/2026
 
 - Alteração: Traduzido para o Português Brasileiro
 - Alteração: Setores agora são: SETOR-(Número)-(Cores). Tanto para a Sala de Navegação quanto
@@ -37,63 +37,65 @@ para os "Locations"
 
 ### Metroid TX-267 SE
 
-#### [0.8.5] - ??/06/2026
+#### [Estável] Não Lançado - ??/06/2026
 
-- Alteração: Atualização na tradução em PT-BR no Messages
 - Adicionados: Traduções extras (interface da Tela de Pausa e Ending)
 
-#### [0.8.0] - 13/06/2026
+#### 『1.5.9.0』- 16/06/2026
+
+- Alteração: Tradução em PT-BR no Messages finalizada.
+
+#### 『0.8.0』 - 13/06/2026
 
 - Alteração: Atualização na tradução em PT-BR no Pause Screen.
 - Alteração: Tradução em PT-BR nos Monologues e parcialmente Messages.
 - Corrigido: Número de versão no File Screen.
 - Corrigido: Número 1 no File Screen. 
 
-#### [0.7.9] - 11/06/2026
+#### 『0.7.9』 - 11/06/2026
 
 - Alteração: Traduzido os textos da Navegação, Locations, File Screen e parcialmente Pause Screen.
 - Corrigido: Algumas partes dos textos da Navegação e Pause Screen.
 
-#### [0.7.8] - 10/06/2026
+#### 『0.7.8』 - 10/06/2026
 
 - Alteração: Atualização na tradução em PT-BR
 - Adicionados: Revisão gramatical dos textos traduzidos e nova tradução melhorada
 - Adicionados: Suporte pro MAGE Themes 1.16.0
 
-#### [0.7.7] - 16/05/2026
+#### 『0.7.7』 - 16/05/2026
 
 - Alteração: Atualização na tradução em PT-BR
 - Corrigido: No número 1C, da parte de "...Bomba melhoria, Senhora" para "...Melhoria de Bomba, Senhora".
 
-#### [0.7.6] - 26/04/2026
+#### 『0.7.6』 - 26/04/2026
 
 - Alteração: Nome das habilidades destacadas nos textos.
 - Alteração: Cor dos nomes dos lugares passou a ser amarela ("[COLOR=3]")
 - Corrigido: O nome "Proceed" corrigido na tradução.
 - Corrigido: No número 8, que de "O Lança-mísseis..." para "A Expansão missilística".
 
-#### [0.7.5] - 24/04/2026
+#### 『0.7.5』 - 24/04/2026
 
 - Adicionados: Tradução em PT-BR
 
-#### [0.7] - Alpha/2026
+#### 『0.7』 - 22/05/2026
 
 - Adicionados: Novo HUD e novo Mapa/Minimapa!
 
+### Metroid Fusion TS Free Edition & Deluxe Edition
+
+#### [ALPHA] Não Lançado - ??/??/202?
+
+- Aguardando alterações.
+- Removido: Minimapa na versão Free.
+
+#### 『0.1』 - 05/06/2026
+
+- Adicionados: Novos anúncios na versão Free. Com possibilidade de removê-los na versão Deluxe.
 
 ## Não Lançados
 
 ### Metroid X-Fusion Master Version
 
 - Aguardando alterações.
-
-### Metroid Fusion TS Free Edition & Deluxe Edition
-
-#### [0.1.5] - ??/??/202?
-
-- Aguardando alterações.
-- Removido: Minimapa na versão Free.
-
-#### [0.1] - 05/06/2026
-
-- Adicionados: Novos anúncios na versão Free. Com possibilidade de removê-los na versão Deluxe.
