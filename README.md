@@ -16,5 +16,5 @@ Meus hacks, traduções ou melhorias do Fusion.
 ## Notas:
 - Este método é gratuito e sem fins lucrativos, se você pagou por ele, foi enganado.
 - Este hack não é um jogo oficial e diverge da história estabelecida
--Este hack foi criado pelo seu criador, e essa é apenas uma tradução não-oficial.
+- Este hack foi criado pelo seu criador, e essa é apenas uma tradução não-oficial.
 - Qualquer dúvida, pergunte ao criador original do hack.
