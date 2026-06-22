@@ -9,11 +9,9 @@ Meus hacks, traduções ou melhorias do Fusion.
 4. Após colocar as roms no lugar correto, clique em "Apply Patch",
 5. Baixe um emulador de GBA
 6. Windows: Após a instalação, localize o emulador e clique duas vezes nele (no arquivo exe).
-
-6.5. Mobile: Clique uma vez no apk ou app para abrir
+- Mobile: Clique uma vez no apk ou app para abrir
 7. Abra a rom. Se você aplicou o patch corretamente, o jogo deve carregar.
-
-7.5. Nota: Procure informações de como abrir o arquivo com o desenvolvedor do emulador.
+- Nota: Procure informações de como abrir o arquivo com o desenvolvedor do emulador.
 
 ## Notas:
 - Este método é gratuito e sem fins lucrativos, se você pagou por ele, foi enganado.
