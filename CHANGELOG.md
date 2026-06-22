@@ -86,6 +86,18 @@ para os "Locations"
 - Alteração: Algumas pequenas mudanças no texto da "Navigation".
 - Alteração: Os mapas agora são "Hidden" (Só que os mais importantes, Save, Recharge, Navegation e Aux Room, são vísiveis. Forçando a explorar)
 
+### Metroid Alt-Fusion II
+
+#### [BETA] Não lançado - ??/06-07/2026
+
+- Adicionados: Revisão na tradução.
+- Adicionados: Tradução no resto do jogo.
+- Adicionados: Créditos.
+
+#### 『2.2』 - 05/03/2025
+
+- Adicionados: Tradução nos diálogos da Sala de Navegação e nas “Locations”.
+
 ## Em desenvolvimento
 
 ### Metroid Fusion TS Free Edition & Deluxe Edition
