@@ -88,18 +88,11 @@ para os "Locations"
 
 ## Em desenvolvimento
 
-### Metroid Fusion TS Free Edition & Deluxe Edition
+## Não Lançados
 
-#### [ALPHA] Não Lançado - ??/??/202?
+### Metroid Fusion Super Zer1
 
 - Aguardando alterações.
-- Removido: Minimapa na versão Free.
-
-#### 『0.1』 - 05/06/2026
-
-- Adicionados: Novos anúncios na versão Free. Com possibilidade de removê-los na versão Deluxe.
-
-## Não Lançados
 
 ### Metroid X-Fusion Master Version
 
