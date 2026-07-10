@@ -1,0 +1,228 @@
+- Number 0
+
+[FEDERATION]Welcome to
+[COLOR=3]Metroid Fusion-Zer1[/COLOR][COLOR=1] Ver1.3[/COLOR][NEXT]
+[COLOR=2]Author: Mengilove[/COLOR]
+[COLOR=4]Technical Support:AetherDust[/COLOR][NEXT]
+[ADAM]The plot text is machine-translated.[NEXT]
+[MUSIC=5F]It seems you've returned once more,but this place has been transformed under my control. [NEXT]
+[COLOR=2]Now go check the specimen retrieved from SR388.[/COLOR][NEXT]
+[COLOR=1]It's stored deep in the bottom-right section of the map.[/COLOR][NEXT]
+[COLOR=6](Hope you didn't get zapped todeath coming back.)
+
+- Number 1
+
+[COLOR=2]Head deep into the bottom-right corner of the map.[/COLOR].
+
+- Number 2
+
+The path is right ahead, but you'll have to traverse a very long corridor.
+
+- Number 3
+
+The path is right ahead.
+
+- Number 4-5
+
+[\x25CC]一[\x2ACC]戦.
+
+- Number 6
+
+[MUSIC=58]You seem surprised that there are no monsters, [NEXT]
+[COLOR=1]yet there are live exposed wires leaking electricity.[/COLOR][NEXT]
+This is just to let you get familiar with the [COLOR=3]controls.[/COLOR][NEXT]
+I've detected a [COLOR=6]powerful biological signal;[/COLOR] it's nearby.[NEXT]
+[COLOR=3]Your current abilities won't let you pass straight through,[/COLOR][NEXT]
+so you'll have to take a detour.[NEXT]
+[COLOR=6]I've unlocked the Level 0 hatch.[/COLOR][NEXT]
+[COLOR=1]Stay careful along the way and remember to save your progress.[/COLOR]
+
+- Number 7
+
+[\x3188]来[\x25CC]一.
+
+- Number 8
+
+I now need to[COLOR=6] forcibly download missile[/COLOR] data to you.[NEXT]
+[COLOR=1]Remember this: Missiles won't work against powerful X[/COLOR]
+
+- Number 9
+
+[\x1F1A][\x2B48][\x1694][\x1D94][\x2AD4].
+
+- Number A
+
+The missile data lies straight ahead.
+
+- Number B
+
+Data Room ahead.
+
+- Number C-D
+
+[\x25CC]一[\x2ACC]戦.
+
+- Number E
+
+[COLOR=2]The elevator has been disabled by the storyline.[/COLOR][NEXT]
+But it doesn't matter; [NEXT]
+you can still go looking for trouble.[NEXT]
+[COLOR=2]That powerful biological signal seems to have grown stronger.[/COLOR][NEXT]
+[COLOR=3]You need to eliminate it immediately.[/COLOR][NEXT]
+[COLOR=1]The large chamber beneath your current map position has instant-kill devices hidden under its floor-be careful.[/COLOR][NEXT]
+[COLOR=1]Watch your step while moving!!![/COLOR]
+
+- Number F
+
+[\x3F0E]流[\x25CC]一。
+
+- Number 10-11
+
+[\x25CC]一[\x2ACC]戦。
+
+- Number 12
+
+[MUSIC=30][COLOR=4]Sector 1 has been overrun by X organisms now.[/COLOR][NEXT]
+They are altering the environment.[NEXT]
+[COLOR=3]Eliminate them at once.[/COLOR]
+
+- Number 13
+
+[COLOR=4]Head to Sector 1 (SRX).(SRX).
+
+- Number 14
+
+[COLOR=2]The elevator is locked off again.[/COLOR][NEXT]
+The X have built [COLOR=1]five[/COLOR] air stabilizers-stop them.[MUSIC=4]
+
+- Number 15
+
+There are five air stabilizers left. Locate and destroy all of them.
+
+- Number 16
+
+It seems the [COLOR=6]charged beam[/COLOR] is the [COLOR=1]only way[/COLOR] for you to dismantle the X-controlled air stabilizers.[NEXT]
+Get as close to them as possible and take them out with the [COLOR=6]charged beam.[/COLOR]
+
+- Number 17
+
+One air stabilizer is yet to be destroyed.
+
+- Number 18
+
+[MUSIC=34]The air has returned to normal.[NEXT]
+But it seems they've moved to [COLOR=4]Sector 2[/COLOR].[NEXT]
+[COLOR=1]Hurry and eliminate them![/COLOR]
+
+- Number 19
+
+Proceed to [COLOR=4]Sector 2.[/COLOR] 
+A passage leading there is nearby.
+
+- Number 1A
+
+[MUSIC=AA][MUSIC=5F][COLOR=1]One X entity has replicated some abilities from your previous version.[/COLOR][DELAY=A][SA-X_FACE][NEXT]
+[COLOR=5]It's terrifying and will chase you relentlessly.[/COLOR][NEXT]
+[COLOR=3]You'll stand no chance against it if you encounter it.[/COLOR][NEXT]
+[COLOR=1]Remember, do not attack it - it will kill you instantly![/COLOR][NEXT]
+The data chamber is now sealed by a [COLOR=6]Level 1 hatch.[/COLOR][NEXT]
+You need to find [COLOR=3]the Level 1 Security Room[/COLOR]first, [NEXT]
+then head to the data chamber to download the [COLOR=6]bomb data.[/COLOR][NEXT]
+[COLOR=3]The Level 1 Security Room[/COLOR]location is unmarked on the map.
+
+- Number 1B
+
+Locate the Level 1 Security Room.
+
+- Number 1C
+
+You have unlocked the[COLOR=6]Level 1 hatch.[/COLOR][NEXT]
+Hurry to the data chamber and download the [COLOR=6]bomb data.[/COLOR]
+
+- Number 1D
+
+Hurry to the data chamber and download the [COLOR=6]bomb data.[/COLOR]
+
+- Number 1E-1F
+
+[\x25CC]一[\x2ACC]戦.
+
+- Number 20
+
+[MUSIC=58]The X reproductive capability is horrifying.[NEXT]
+The moment you unlocked the [COLOR=6]Level 1 hatch[/COLOR], [NEXT]
+hey have already broken into [COLOR=4]Sector 4.[/COLOR][NEXT]
+[COLOR=4]Get to Sector 4 right now.[/COLOR][NEXT]
+[COLOR=2]It's near the elevator in Sector 2.[/COLOR]
+
+- Number 21
+
+Proceed to the Command Room of [COLOR=4]Sector 4[/COLOR] (AQA).
+
+- Number 22
+
+[MUSIC=59]Everything here looks completely different.[NEXT]
+[COLOR=3]A Seris was raised here before.[/COLOR],[NEXT]
+[COLOR=2]It can move at high speed.[NEXT]
+It's infected by X now,[NEXT]
+and has grown even stronger as a result.[/COLOR][NEXT]
+It can now stay out of water entirely, with none of its abilities restricted.[NEXT]
+[COLOR=1]Hurry up and eliminate it now.[/COLOR]
+
+- Number 23-24
+
+[\x25CC]一[\x2ACC]戦.
+
+- Number 25-27
+
+[\x1ECC].
+
+- Number 28
+
+[MUSIC=2C]Looks like you took down the Seris. Nice work.[NEXT]
+Therefore, you have obtained an ominous ability:[COLOR=6] Acceleration.[/COLOR].[NEXT]
+It looks awesome, yet it will make all your subsequent moves much harder.[NEXT]
+You'd better head to Sector 3 now;[NEXT]
+a [COLOR=6]super missile[/COLOR] has been prepared for you there.[NEXT]
+The location of [COLOR=4]Sector 3[/COLOR] might be marked on the map.
+
+- Number 29
+
+Head to [COLOR=4]Sector 3.[/COLOR]
+
+- Number 2A
+
+[COLOR=4]Sector 3 [/COLOR]looks totally unrecognizable as well.[NEXT]
+I just asked the creator,[NEXT]
+and he said you can't get the [COLOR=6]super missile[/COLOR] that easily.[NEXT]
+You need to activate the [COLOR=6]Level 2 hatch[/COLOR] first.[NEXT]
+The location of the security room is not clearly marked on the map.
+
+- Number 2B
+
+First open the [COLOR=6]Level 2 hatch[/COLOR],[NEXT]
+then head to the [COLOR=3]data room.[/COLOR]
+
+- Number 2C
+
+The [COLOR=6]Level 2 security lock[/COLOR] is unlocked,[NEXT]
+and the [COLOR=6]green hatch[/COLOR] has been activated.[NEXT]
+Proceed to the data room to download the [COLOR=6]super missile.[/COLOR]
+
+- Number 2D
+
+Proceed to the data room to download the [COLOR=6]super missile.[/COLOR]
+
+- Number 2E-2F
+
+[\x25CC]一[\x2ACC]戦.
+
+- Number 30
+
+The[COLOR=6] Level 2 hatch[/COLOR] is now open,[NEXT]
+and [COLOR=4]Sectors 5 and 6[/COLOR] are also unlocked.[NEXT]
+This also means countless X creatures have invaded these two areas.[NEXT]
+[COLOR=4]Sector 5 [/COLOR]has an ultra-low temperature environment. [NEXT]
+Since you were forcibly injected with [COLOR=3]Metroid DNA[/COLOR] by the plot, [NEXT]
+you cannot operate in frigid conditions for long.[NEXT]
+You need to avoid [COLOR=4]Sector 5[/COLOR] and head to the data room in [COLOR=4]Sector 6.[/COLOR]
