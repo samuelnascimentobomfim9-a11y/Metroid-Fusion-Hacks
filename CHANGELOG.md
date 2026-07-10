@@ -99,11 +99,7 @@ para os "Locations"
 - Adicionados: Tradução em PTBR nos 30 primeiros diálogos
 - Adicionados: Suporte pro MAGE Themes 1.16.0
 
-## Não Lançados
-
-### Metroid Fusion Super Zer1
-
-- Aguardando alterações.
+## Não Lançado
 
 ### Metroid X-Fusion Master Version
 
