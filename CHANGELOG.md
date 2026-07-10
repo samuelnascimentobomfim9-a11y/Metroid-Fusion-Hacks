@@ -88,6 +88,17 @@ para os "Locations"
 
 ## Em desenvolvimento
 
+### Metroid Fusion Super Zer1
+
+#### [Alpha] Não Lançado - ??/0?/2026 
+
+- Alteração: Atualização na Tradução em PT-BR.
+
+#### 『01.1』 - 10/07/2026
+- Adicionados: Revisão grámatical para os textos traduzidos
+- Adicionados: Tradução em PTBR nos 30 primeiros diálogos
+- Adicionados: Suporte pro MAGE Themes 1.16.0
+
 ## Não Lançados
 
 ### Metroid Fusion Super Zer1
