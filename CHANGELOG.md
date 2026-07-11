@@ -90,9 +90,14 @@ para os "Locations"
 
 ### Metroid Fusion Super Zer1
 
-#### [Alpha] Não Lançado - ??/0?/2026 
+#### [Alpha] Não Lançado - ??/07-08/2026 
 
 - Alteração: Atualização na Tradução em PT-BR.
+
+#### 『02.0』 - 11/07/2026
+- Alteração: Atualização na Tradução em PT-BR.
+- Adicionados: Tradução nos textos em chinês na Navegation; Pause Screeen e um no Monologues
+- Adicionados: Créditos finais e Ending traduzido.
 
 #### 『01.1』 - 10/07/2026
 - Adicionados: Revisão grámatical para os textos traduzidos
