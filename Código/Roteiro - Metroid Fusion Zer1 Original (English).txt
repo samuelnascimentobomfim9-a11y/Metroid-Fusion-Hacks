@@ -1,3 +1,7 @@
+Última atualização: 11:52 11/07/2026
+
+{Navigation}
+
 - Number 0
 
 [FEDERATION]Welcome to
@@ -226,3 +230,294 @@ This also means countless X creatures have invaded these two areas.[NEXT]
 Since you were forcibly injected with [COLOR=3]Metroid DNA[/COLOR] by the plot, [NEXT]
 you cannot operate in frigid conditions for long.[NEXT]
 You need to avoid [COLOR=4]Sector 5[/COLOR] and head to the data room in [COLOR=4]Sector 6.[/COLOR]
+
+- Number 31; 34-35
+
+Head to [COLOR=4]Sector 6 (NOC).[/COLOR]
+
+- Number 32
+
+[MUSIC=5C][FEDERATION][COLOR=1][\x3048]方[\x2FCE][\x1C94][/COLOR]???[\x3108][\x1884][\x2EC4][\x3A4C][\x2C4C][\x1A1E][\x33DC]壁[\x30D0][\x4208]!
+[\x1744][\x1744][\x1744]...
+
+- Number 36
+
+[MUSIC=2C][COLOR=4]Sector 6 (NOC)[/COLOR] seems far [COLOR=3]darker[/COLOR] than before.[NEXT]
+You need to move with greater caution.[COLOR=6][NEXT]
+[COLOR=6]The Pitaya Suit[/COLOR] is waiting in the [COLOR=3]data room.[/COLOR][NEXT]
+It can effectively protect you from freezing temperatures.[NEXT]
+Head there at once.[NEXT]
+However, there appear to be [COLOR=2]mutated X creatures[/COLOR] lingering here.[POPUP_OPEN][NEXT]
+It seems they've figured out your weakness to cold and adapted to become frigid variants.[NEXT]
+If you accidentally absorb these cold X parasites,you will lose energy.[NEXT]
+Run away when you spot them,use your beam to stun them if you can't escape.
+
+- Number 37
+
+Find the Pitaya Suit specially prepared for you!
+
+- Number 38-39
+
+[\x25CC]一[\x2ACC]戦.
+
+- Number 3A
+
+[MUSIC=2C]What?The X creatures have stolen your[COLOR=6] Pitaya Suit![/COLOR] 
+Seems they're fond of pitayas. [NEXT]
+[COLOR=1]Aren't they afraid of getting diarrhea from eating too much?[/COLOR][NEXT]
+Anyway, you've now recovered the [COLOR=6]Pitaya Suit[/COLOR],
+so you're free to explore [COLOR=4]Sector 5[/COLOR] without worry.[NEXT]
+We've prepared [COLOR=6]Ice Missiles[/COLOR] for you there. [NEXT]
+They'll give you a fighting chance against the [COLOR=3]SA-X[/COLOR], [NEXT]
+they're extremely useful.[NEXT]
+Now head to [COLOR=4]Sector 5[/COLOR] to download it.
+
+- Number 3B
+
+Proceed to [COLOR=4]Sector 5[/COLOR] to download [COLOR=6]Ice Missiles.[/COLOR]
+
+- Number 3C
+
+You need to download [COLOR=6]Ice Missiles[/COLOR],[NEXT]
+but the data room is sealed with a [COLOR=6]Level 3 Security Lock[/COLOR]. [NEXT]
+The security office seems to be deep underground inside a lab. [NEXT]
+Time is of the essence-let's move out.
+
+- Number 3D
+
+First, head to the underground lab to disable the [COLOR=6]Security Lock.[/COLOR][NEXT]
+Then proceed to the data room.
+
+- Number 3E
+
+The [COLOR=6]Level 3 Security Lock[/COLOR] is unlocked.[NEXT]
+The [COLOR=6]yellow hatch[/COLOR] has been activated.[NEXT]
+Go to the data room to download the [COLOR=6]Ice Missiles[/COLOR] data.
+
+- Number 3F
+
+Head to the data room to download the [COLOR=6]Ice Missiles.[/COLOR]
+
+- Number 40-41
+
+[\x25CC]一[\x2ACC]戦.
+
+- Number 42
+
+You've finally returned. After the [COLOR=6]Level 3 Hatch[/COLOR] opened,[NEXT]
+one X creature duplicated a [COLOR=2]survivor[/COLOR].[NEXT]
+It seems it's tasked with destroying the space station.[NEXT]
+Hurry and stop it.Only you,Samus,are meant to bring this station down-don't let it steal your [COLOR=1]kill.[/COLOR]
+
+- Number 43
+
+There's no time left. Go find that X creature immediately.
+
+- Number 44-45
+
+[\x25CC]一[\x2ACC]戦.
+
+- Number 46
+
+[MUSIC=5D]Looks like you stopped everything from happening.[NEXT]
+I'm curious though-why didn't you go ahead and [COLOR=1]destroy the space station[/COLOR]? [NEXT]
+Aren't you fond of wrecking every place you visit? [NEXT]
+Seems you want to tempt fate a little longer.[NEXT]
+[MUSIC=2C]Never mind. The locked-off [COLOR=2]elevator[/COLOR] is usable now.[NEXT]
+I've detected a [COLOR=2]life signal[/COLOR] in the living quarters.[NEXT]
+Go check it out; it might come in handy later.
+
+- Number 47
+
+Proceed to the objective. [COLOR=2]Locate the survivor.[/COLOR]
+
+- Number 48-49
+
+[\x25CC]一[\x2ACC]戦.
+
+- Number 4A
+
+[MUSIC=2C]I get it now. You're planning to [COLOR=1]pull off something huge[/COLOR].[NEXT]
+Your current abilities aren't enough to [COLOR=1]pull off something huge[/COLOR] yet,[NEXT]
+but I'll cooperate with you.[NEXT]
+I've prepared the [COLOR=6]Power Bomb[/COLOR] for you now.[NEXT]
+[COLOR=1]This device possesses devastating destructive power.[/COLOR][NEXT]
+[COLOR=3]Maybe later you can sneak inside a creature's body and detonate one[/COLOR].[NEXT]
+The [COLOR=6]Power Bomb[/COLOR] is located in the [COLOR=4]Sector 5[/COLOR] data room,[NEXT]
+a place you've visited before.
+
+- Number 4B
+
+Head to [COLOR=4]Sector 5 (ARC)[/COLOR] to download the [COLOR=6]Power Bomb data.
+
+- Number 4C
+
+You've been to the data room before.
+
+- Number 4D
+
+Head to [COLOR=4]Sector 5 (ARC)[/COLOR] and download the [COLOR=6]Power Bomb data.
+
+- Number 4E-4F
+
+[\x25CC]一[\x2ACC]戦.
+
+- Number 50
+
+It seems you ran into it,[NEXT]
+and it tried to stop you from destroying the space station.[NEXT]
+But since you've made it back, you must have shaken it off.[NEXT]
+Now return to your [COLOR=2]ship[/COLOR] and make your final preparations.[NEXT]
+Don't let the countdown start only to find your [COLOR=2]ship[/COLOR] gone-that'll be a total [COLOR=1]game over[/COLOR].
+
+- Number 51
+
+Head to your [COLOR=2]ship[/COLOR] and get ready to destroy the space station.
+
+- Number 52
+
+[MUSIC=2A][MUSIC=12E]The [COLOR=4]main reactor core shaft[/COLOR] has shut down.[NEXT]
+The energy from this shaft is required to destroy the space station.[NEXT]
+The X creatures have seen through your plan and keep trying to stand in your way.[NEXT]
+By the way, the creatures you rescued earlier have boarded your [COLOR=2]ship[/COLOR].[POPUP_OPEN][NEXT]
+They fully support your mission and have decided to assist you.[NEXT]
+I'll brief them on what to do. [NEXT]
+First, go find out why the [COLOR=4]main reactor core shaft[/COLOR] went offline.[NEXT]
+A [COLOR=3]massive spider[/COLOR] lurks there,[NEXT]
+and it's extremely [COLOR=1]powerful![/COLOR]
+
+- Number 53
+
+Head to the auxiliary power station.
+
+- Number 54-55
+
+[\x25CC]一[\x2ACC]戦.
+
+- Number 56
+
+[MUSIC=2B]The recording room and charging room are back online,[NEXT]
+yet the [COLOR=3]main shaft[/COLOR] remains non-functional.[NEXT]
+It's being blocked by vegetation from [COLOR=4]Sector 2[/COLOR].[NEXT]
+Hurry and eliminate them.[NEXT]
+[COLOR=1](This mission is extremely difficult. Remember to save your progress.}[/COLOR]
+
+- Number 57
+
+Locate and eliminate the mother plant.
+
+- Number 58
+
+What? You actually survived and even obtained the [COLOR=6]Ion Beam[/COLOR]-unbelievable.[NEXT]
+[MUSIC=B]But you're still missing a crucial ability that will make you [COLOR=2]far more agile and durable[/COLOR] in the battles ahead.[NEXT]
+[MUSIC=58]That's right, it's the [COLOR=6]Gravity Suit.[NEXT]
+It's held by the [COLOR=3]Nightmare[/COLOR] in [COLOR=4]Sector 5[/COLOR]. [NEXT]
+Go defeat it.
+
+- Number 59
+
+Head to [COLOR=4]Sector 5[/COLOR] and defeat [COLOR=3]Nightmare.[/COLOR]
+
+- Number 5A
+
+Bad news: the [COLOR=3]Nightmare[/COLOR] has been infected by X and grown far stronger.[NEXT]
+You might not stand a chance right now...[NEXT]
+Well, nothing's gonna stop you anyway. [NEXT]
+Get moving at once![NEXT]
+[COLOR=1](This mission is extremely difficult. Remember to save your game.)[/COLOR]
+
+- Number 5B
+
+Eliminate [COLOR=3]Nightmare.[/COLOR]
+
+- Number 5C
+
+[\x1F90][\x2C9E]草束:発[\x1E94][\x3BD8].
+
+- Number 5D
+
+Unlock the [COLOR=6]Level 4 Security Lock[/COLOR] and head to the data room.
+[COLOR=1](No hidden story content)[/COLOR]
+
+- Number 5E-5F
+
+[\x1ECC]。
+
+- Number 60
+
+Looks like you've obtained the [COLOR=6]Diffusion Missiles[/COLOR] prepared for you, [NEXT]
+bringing you one step closer to your goal.[NEXT]
+However, unlocking the [COLOR=6]Level 4 Security Lock[/COLOR] has driven the [COLOR=3]security robot berserk.[/COLOR][NEXT]
+Go check on them quickly-they went easy on you last time.
+
+- Number 61
+
+Locate the [COLOR=3]security robot[/COLOR] in [COLOR=4]Sector 6[/COLOR].
+
+- Number 62
+
+[MUSIC=2B]The [COLOR=3]security robot[/COLOR] had its [COLOR=2]outer casing[/COLOR] damaged during your earlier fight,[NEXT]
+and it's now infected by X.[NEXT]
+It seems you have no choice but to destroy it.[NEXT]
+[COLOR=1](This mission is extremely tough. Remember to save your progress.)[/COLOR]
+
+- Number 63
+
+Locate and eliminate the [COLOR=3]security robot[/COLOR], then leave immediately.
+
+- Number 64
+
+[MUSIC=5C] Good, it seems you've made your move.[NEXT]
+But I'd advise against this-it'll [COLOR=2]tip them off.[NEXT]
+We agreed to pull off [COLOR=1]one big operation.[/COLOR][NEXT]
+First, you must take down [COLOR=3]Ridley[/COLOR], your [COLOR=2]archrival.[/COLOR][NEXT]
+If you keep wreaking havoc, he'll stop you at the cost of his own life and ruin your entire plan.[NEXT]
+[COLOR=3]Go eliminate him right now.[/COLOR]
+
+- Number 65
+
+[\x2094][\x1E16][\x3F4E][\x209C].
+
+- Number 66
+
+[MUSIC=5D] [COLOR=2]This is the final step. Have you made up your mind?[/COLOR][NEXT]
+I'll give you some time to think it over.[NEXT]
+[COLOR=4]You're free to explore the space station during this window.[/COLOR][NEXT]
+[COLOR=2]You're unstoppable anywhere on the station right now.[/COLOR][NEXT]
+[COLOR=1]Come back once you decide; any command room will work![/COLOR]
+
+- Number 67
+
+発[\x3BD8]
+
+- Number 68
+
+[SAMUS][MUSIC=5F] I've made my decision.[NEXT]
+Now that I've come this far, this station must be destroyed by my hand.[NEXT]
+[COLOR=1] This is the path I've always walked. [NEXT]
+I won't break my own code.
+
+- Number 69
+
+Ma'am, what are you doing?! Head to the control room!
+
+- Number 6A
+
+Proceed to the control room to set the detonation sequence, then return to your [COLOR=2]ship[/COLOR] and evacuate.
+
+- Number 6B
+
+[\x2B48]元[\x421C][\x2EDA].
+
+- Number 6C-6D
+
+[\x25CC]一[\x2ACC]戦.
+
+- Number 6E
+
+[\x3DC2][\x1ECC][\x1A96][\x3EC6][\x4186][\x2D58][COLOR=4]SR388[/COLOR][\x2A02][\x2448][\x3C12]率[\x2D8C][\x2E58][\x1A96][\x2190].
+[\x1F1A][\x4240]!!
+
+- Number 6F
+
+[\x1F1A],[\x2094][\x1E16][\x3F4E][\x209C]!
