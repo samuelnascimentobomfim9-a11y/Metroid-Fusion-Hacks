@@ -90,9 +90,14 @@ para os "Locations"
 
 ### Metroid Fusion Super Zer1
 
-#### [Alpha] Não Lançado - ??/07-08/2026 
+#### [Beta] Não Lançado - ??/07-08/2026 
 
 - Alteração: Atualização na Tradução em PT-BR.
+- Corrigido: Textos na Navegation.
+
+#### 『02.1』 - 11/07/2026
+
+- Adicionados: Minimapa do "GRAVITY – Sylux’s Crusade" e "MF Special Edition".
 
 #### 『02.0』 - 11/07/2026
 - Alteração: Atualização na Tradução em PT-BR.
