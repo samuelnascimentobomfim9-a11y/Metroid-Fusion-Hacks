@@ -1,4 +1,4 @@
-Última atualização: 11:52 11/07/2026
+Última atualização: 18:39 15/07/2026
 
 {Navigation}
 
@@ -521,3 +521,309 @@ Proceed to the control room to set the detonation sequence, then return to your 
 - Number 6F
 
 [\x1F1A],[\x2094][\x1E16][\x3F4E][\x209C]!
+
+{Pause Screen}
+
+- Number 0
+
+Head deep to the bottom-right of the map.
+
+- Number 1
+
+Investigate the deep bottom-right area of the map.
+
+- Number 2
+
+You're worn out from running.Head back to the Navigation Room.
+
+- Number 3
+
+First, check the command room up above.
+
+- Number 4
+
+Locate the data chamber and download the missile data.
+
+- Number 5-6
+
+Download missile data.
+
+- Number 7
+
+Obtain the missiles.
+
+- Number 8
+
+There seems to be a passage leading back on the right.
+
+- Number 9
+
+There seems to be a passage leading back on the right.
+
+- Number A
+
+Acquire the Morph Ball ability. Report to the Navigation Room.
+
+- Number B-D
+
+X detected in Sector 1. Proceed to the Sector 1 Navigation Room.
+
+- Number E
+
+Deal with the malfunctioning air stabilizer.
+
+- Number F
+
+Obtain Charge Beam. Continue repairing the air stabilizer.
+
+- Number 10
+
+Head to the Sector 1 Navigation Room.
+
+- Number 11
+
+Head to the Sector 2 Navigation Room.
+
+- Number 12
+
+The elevator to the main sector is back online.
+
+- Number 13-14
+
+SA-X is hunting you down, and it destroyed the original path.
+
+- Number 15
+
+Download bombs. Run!
+
+- Number 16-18
+
+Bombs can seemingly make Morph Ball jump higher.
+
+- Number 19
+
+Watch out for SA-X! It's close by.
+
+- Number 1A
+
+Return to the Sector 2 Navigation Room.
+
+- Number 1B
+
+Head to the Sector 4 Navigation Room.
+
+- Number 1C
+
+Locate the X-infected Serris and eliminate it.
+
+- Number 1D-1F
+
+You can use the speed booster on top of the water level regulator.
+
+- Number 20
+
+Use Speed Booster to return to the Navigation Room.
+
+- Number 21
+
+Head to the Sector 3 Navigation Room.
+
+- Number 22
+
+he Level 2 Security Room appears to be inside a pipe system.
+
+- Number 23-24
+
+Head to the data room and download Super Missiles.
+
+- Number 25
+
+Download Super Missiles.
+
+- Number 26
+
+Strange activity detected deep within Sector 3.
+
+- Number 27
+
+The security robot deep in Sector 3 has gone rogue. Stop it!
+
+- Number 28
+
+Head to the Sector 3 Navigation Room.
+
+- Number 29-2D
+
+Head to the Sector 6 Navigation Room.
+
+- Number 2E
+
+Sector 6 seems even darker. Stay alert.
+
+- Number 2F
+
+Locate the Dragon Fruit Suit. Watch out for Blue X along the way.
+
+- Number 30
+
+SA-X is close by! Stay careful!
+
+- Number 31
+
+Locate the Dragon Fruit Suit. Watch out for Blue X along the way.
+
+- Number 32
+
+Damn it, the Dragon Fruit Suit was stolen by the vile X parasite.
+
+- Number 33-34
+
+Return to Sector 6 Navigation Room to report.
+
+- Number 35
+
+Proceed to the Sector 5 Navigation Room.
+
+- Number 36
+
+Locate the Level 3 Security Room deep within the laboratory.
+
+- Number 37
+
+Locate the Data Room and download the Ice Missiles.
+
+- Number 38-39
+
+Download Ice Missiles.
+
+- Number 3A
+
+Try using Ice Missiles to find a new route.
+
+- Number 3B
+
+Sector 3 is overheating. Head to the control room.
+
+- Number 3C-3D
+
+Return to the Sector 3 Navigation Room to report.
+
+- Number 3E
+
+A life signal is present in one of the save rooms.
+
+- Number 3F
+
+Proceed to the Main Sector Navigation Room.
+
+- Number 40
+
+Proceed to Sector 5 Navigation Room.
+
+- Number 41
+
+Proceed to the Data Room and download the Power Bomb.
+
+- Number 42-44
+
+Return to Sector 5 Navigation Room.
+
+- Number 45-46
+
+Return to the ship.
+
+- Number 47
+
+Head to the bottom-left corner of the map to explore.
+
+- Number 48
+
+Locate the powerful spider and eliminate it!
+
+- Number 49
+
+Absorb the Space Jump ability.
+
+- Number 4A
+
+Auxiliary power activated. Previous malfunction cause unknown.
+
+- Number 4B-4C
+
+Utilize the Speed Booster ability to find the source of the vegetation.
+
+- Number 4D
+
+Beware the flying insects-they are dangerous, yet their bodies are fragile.
+
+- Number 4E
+
+Return to Sector 2 Navigation Room.
+
+- Number 4F
+
+Word has it there's a Gravity Suit. Head to Sector 5 Navigation Room.
+
+- Number 50
+
+The Nightmare seems to be somewhere high up.
+
+- Number 51-52
+
+Proceed to Sector 4 and unlock the Level 4 red hatch.
+
+- Number 53
+
+Head to Sector 4 Data Room to download Diffusion Missiles.
+
+- Number 54
+
+Level 4 security lock disengaged. Proceed to the Navigation Room.
+
+- Number 55
+
+Download Diffusion Missiles.
+
+- Number 56
+
+Use the new missiles to return to Sector 4 Navigation Room.
+
+- Number 57
+
+Head to Sector 6 Navigation Room to assess the situation.
+
+- Number 58
+
+It seems it's hidden among the otherworldly pipes.
+
+- Number 59
+
+The alarm sound seems capable of summoning security droids.
+
+- Number 5A
+
+Security droids are nearby, and they're extremely powerful now!
+
+- Number 5B
+
+Evacuate Sector 6 immediately.
+
+- Number 5C-5D
+
+SA-X has gone rogue.
+Exit the confidential lab.
+
+- Number 5E
+
+The confidential laboratory has been abandoned.
+
+- Number 5F
+
+Locate the arch-nemesis Ridley and eliminate it.Beware its assaults!!!!!
+
+- Number 60
+
+Spin attack ability restored. Head to the Navigation Room.
+
+- Number 61-6E:
+Já está traduzido.
