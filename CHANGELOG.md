@@ -90,13 +90,19 @@ para os "Locations"
 
 ### Metroid Fusion Super Zer1
 
-#### [Estável] Não Lançado - ??/07-08/2026 
+#### 『1.2.9.0』 - 16/07/2026
 
 - Alteração: Finalização na Tradução em PT-BR.
-- 
+- Alteração: Atualizando os créditos.
+- Adicionados: Tradução do DeepL no Messages e Locations.
+- Adicionados: Novos Tiles para partes de Laboratório.
+- Corrigido: Minimapa; E colocado um novo com partes do ZM Return to Zebes no lugar.
+
 #### 『02.2』 - 14/07/2026
 
+- Alteração: Atualização na Tradução em PT-BR.
 - Corrigido: Textos na Navegation.
+- Corrigido: Versão no File Screen.
 
 #### 『02.1』 - 11/07/2026
 
