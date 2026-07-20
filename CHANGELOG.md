@@ -13,6 +13,10 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 - Adicionados: Traduções Extras
 
+#### 『1.7.02』- 20/06/2026
+
+- Corrigido: Número de versão no File Screen
+
 #### 『1.7.01』- 17/06/2026
 
 - Adicionados: Traduções Extras (Ending)
@@ -62,6 +66,12 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ### Metroid Alt-Fusion III
 
+#### [Estável] Não Lançado - ??/??/2026 
+
+- Corrigido: Os diálogos na Sala de Navegação (Que ficavam bugados)
+- Adicionados: Revisão na tradução.
+- Adicionados: Dois diálogos engraçados.
+
 #### 『1.03』 - 14/06/2026
 
 - Corrigido: A tradução na interface da Tela de Pausa. (Que por algum motivo, não foi importada para o jogo)
@@ -89,6 +99,10 @@ para os "Locations"
 ## Em desenvolvimento
 
 ### Metroid Fusion Super Zer1
+
+#### [Beta] Não Lançado - ??/??/2026 
+
+- Corrigido: Partes do Pause Screen.
 
 #### 『1.2.9.0』 - 16/07/2026
 
@@ -118,8 +132,16 @@ para os "Locations"
 - Adicionados: Tradução em PTBR nos 30 primeiros diálogos
 - Adicionados: Suporte pro MAGE Themes 1.16.0
 
-## Não Lançado
+### Metroid Fusion X-Master Quest
 
-### Metroid X-Fusion Master Version
+#### [Alpha] Não Lançado - ??/??/20?? 
 
 - Aguardando alterações.
+
+#### 『1.1』 - 20/07/2026
+
+- Adicionados: Tiles do X-Fusion
+
+## Não Lançado
+
+- Aguardando hacks...
