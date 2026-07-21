@@ -9,9 +9,10 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ### Metroid TX-267 SE
 
-#### [Estável] Não Lançado - ??/??/20?? 
+#### 『1.7.03』- 21/07/2026
 
-- Adicionados: Traduções Extras
+- Corrigido: Créditos.
+- Corrigido: Pause Screen.
 
 #### 『1.7.02』- 20/06/2026
 
