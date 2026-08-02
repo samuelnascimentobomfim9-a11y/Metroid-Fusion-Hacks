@@ -20,7 +20,8 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 #### 『1.7.01』- 17/06/2026
 
-- Adicionados: Traduções Extras (Ending)
+- Adicionados: Traduções Extras
+  - Ending
 - Adicionados: Créditos.
 
 #### 『1.5.9.0』- 16/06/2026
