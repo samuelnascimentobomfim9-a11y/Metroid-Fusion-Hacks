@@ -1,0 +1,71 @@
+name: Validate Changelog
+
+on:
+  pull_request:
+    branches: [ main, master ]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  check_changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Validate and structure changelog changes
+        id: process_changelog
+        run: |
+          FILE="CHANGELOG.md"
+          
+          if [ ! -f "$FILE" ]; then
+            echo "❌ ERROR: CHANGELOG.md file not found!"
+            exit 1
+          fi
+
+          if ! grep -q "# Changelog" "$FILE"; then
+            echo "❌ ERROR: Main title '# Changelog' is missing."
+            exit 1
+          fi
+
+          if ! grep -q "『" "$FILE" || ! grep -q "』" "$FILE"; then
+            echo "❌ ERROR: Version markers 『 』 not found."
+            exit 1
+          fi
+
+          # Extracts the clean version number (e.g., 1.7.03)
+          RAW_VERSION=$(grep -o '『[^』]*』' "$FILE" | head -n 1)
+          VERSION_NUMBER=$(echo "$RAW_VERSION" | tr -d '『』')
+          
+          if [ -z "$VERSION_NUMBER" ]; then
+            echo "❌ ERROR: Could not extract version number."
+            exit 1
+          fi
+
+          # Captures change lines below the version, keeping the list format
+          CHANGES=$(sed -n "/『$VERSION_NUMBER』/,/####\|##/p" "$FILE" | grep '^[[:space:]]*-[[:space:]]' | sed 's/^[[:space:]]*//')
+
+          if [ -z "$CHANGES" ]; then
+            CHANGES="- No detailed changes found."
+          fi
+
+          # Save variables to environment
+          echo "VERSION_NUM=$VERSION_NUMBER" >> $GITHUB_ENV
+          
+          # Handle multiline output safely for GitHub Actions
+          echo "CHANGES_LIST<<EOF" >> $GITHUB_ENV
+          echo "$CHANGES" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+          
+          echo "✅ SUCCESS: Changelog validated and structured!"
+
+      - name: Comment on Pull Request
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            🤖 **Nova versão!** A versão **${{ env.VERSION_NUM }}** está disponível! 🚀
+            
+            ⚙️ **Alterações:**
+            ${{ env.CHANGES_LIST }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
