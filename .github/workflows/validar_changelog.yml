@@ -1,4 +1,4 @@
-name: Validar Changelog
+name: Validate Changelog
 
 on:
   pull_request:
@@ -8,53 +8,63 @@ permissions:
   pull-requests: write
 
 jobs:
-  verificar_changelog:
+  check_changelog:
     runs-on: ubuntu-latest
     steps:
-      - name: Baixar codigo do repositorio
+      - name: Checkout repository code
         uses: actions/checkout@v4
 
-      - name: Validar e estruturar lista de alteracoes
-        id: processar_changelog
+      - name: Validate and structure changelog changes
+        id: process_changelog
         run: |
           FILE="CHANGELOG.md"
           
           if [ ! -f "$FILE" ]; then
-            echo "❌ ERRO: O arquivo CHANGELOG.md nao foi encontrado!"
+            echo "❌ ERROR: CHANGELOG.md file not found!"
             exit 1
           fi
 
-          # 1. Extrai o número da versão limpo (ex: 1.7.03)
-          VERSAO_BRUTA=$(grep -o '『[^』]*』' "$FILE" | head -n 1)
-          NUMERO_VERSAO=$(echo "$VERSAO_BRUTA" | tr -d '『』')
-          
-          if [ -z "$NUMERO_VERSAO" ]; then
-            echo "❌ ERRO: Nao foi encontrada nenhuma versao envelopada em 『 』."
+          if ! grep -q "# Changelog" "$FILE"; then
+            echo "❌ ERROR: Main title '# Changelog' is missing."
             exit 1
           fi
 
-          # 2. Captura as linhas de alteração mantendo a estrutura de tópicos original do arquivo
-          ALTERACOES=$(sed -n "/『$NUMERO_VERSAO』/,/####\|##/p" "$FILE" | grep '^[[:space:]]*-[[:space:]]' | sed 's/^[[:space:]]*//')
-
-          if [ -z "$ALTERACOES" ]; then
-            ALTERACOES="- Nenhuma alteração detalhada foi encontrada."
+          if ! grep -q "『" "$FILE" || ! grep -q "』" "$FILE"; then
+            echo "❌ ERROR: Version markers 『 』 not found."
+            exit 1
           fi
 
-          # Salva as variáveis no ambiente do GitHub Actions
-          echo "versao_numero=$NUMERO_VERSAO" >> $GITHUB_ENV
+          # Extracts the clean version number (e.g., 1.7.03)
+          RAW_VERSION=$(grep -o '『[^』]*』' "$FILE" | head -n 1)
+          VERSION_NUMBER=$(echo "$RAW_VERSION" | tr -d '『』')
           
-          # Garante que a quebra de linha dos tópicos seja preservada no GitHub
-          echo "LISTA_ALTERACOES<<EOF" >> $GITHUB_ENV
-          echo "$ALTERACOES" >> $GITHUB_ENV
+          if [ -z "$VERSION_NUMBER" ]; then
+            echo "❌ ERROR: Could not extract version number."
+            exit 1
+          fi
+
+          # Captures change lines below the version, keeping the list format
+          CHANGES=$(sed -n "/『$VERSION_NUMBER』/,/####\|##/p" "$FILE" | grep '^[[:space:]]*-[[:space:]]' | sed 's/^[[:space:]]*//')
+
+          if [ -z "$CHANGES" ]; then
+            CHANGES="- No detailed changes found."
+          fi
+
+          # Save variables to environment
+          echo "VERSION_NUM=$VERSION_NUMBER" >> $GITHUB_ENV
+          
+          # Handle multiline output safely for GitHub Actions
+          echo "CHANGES_LIST<<EOF" >> $GITHUB_ENV
+          echo "$CHANGES" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
           
-          echo "✅ Sucesso: Versao e alteracoes estruturadas com sucesso!"
+          echo "✅ SUCCESS: Changelog validated and structured!"
 
-      - name: Comentar no Pull Request
+      - name: Comment on Pull Request
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            Nova versão! A versão **${{ env.versao_numero }}** está disponível!
+            Nova versão! A versão **${{ env.VERSION_NUM }}** está disponível!
             Alterações:
-            ${{ env.LISTA_ALTERACOES }}
+            ${{ env.CHANGES_LIST }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
