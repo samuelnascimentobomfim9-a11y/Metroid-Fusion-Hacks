@@ -1,0 +1,60 @@
+name: Validar Changelog
+
+on:
+  pull_request:
+    branches: [ main, master ]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  verificar_changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar codigo do repositorio
+        uses: actions/checkout@v4
+
+      - name: Validar e estruturar lista de alteracoes
+        id: processar_changelog
+        run: |
+          FILE="CHANGELOG.md"
+          
+          if [ ! -f "$FILE" ]; then
+            echo "❌ ERRO: O arquivo CHANGELOG.md nao foi encontrado!"
+            exit 1
+          fi
+
+          # 1. Extrai o número da versão limpo (ex: 1.7.03)
+          VERSAO_BRUTA=$(grep -o '『[^』]*』' "$FILE" | head -n 1)
+          NUMERO_VERSAO=$(echo "$VERSAO_BRUTA" | tr -d '『』')
+          
+          if [ -z "$NUMERO_VERSAO" ]; then
+            echo "❌ ERRO: Nao foi encontrada nenhuma versao envelopada em 『 』."
+            exit 1
+          fi
+
+          # 2. Captura as linhas de alteração mantendo a estrutura de tópicos original do arquivo
+          ALTERACOES=$(sed -n "/『$NUMERO_VERSAO』/,/####\|##/p" "$FILE" | grep '^[[:space:]]*-[[:space:]]' | sed 's/^[[:space:]]*//')
+
+          if [ -z "$ALTERACOES" ]; then
+            ALTERACOES="- Nenhuma alteração detalhada foi encontrada."
+          fi
+
+          # Salva as variáveis no ambiente do GitHub Actions
+          echo "versao_numero=$NUMERO_VERSAO" >> $GITHUB_ENV
+          
+          # Garante que a quebra de linha dos tópicos seja preservada no GitHub
+          echo "LISTA_ALTERACOES<<EOF" >> $GITHUB_ENV
+          echo "$ALTERACOES" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+          
+          echo "✅ Sucesso: Versao e alteracoes estruturadas com sucesso!"
+
+      - name: Comentar no Pull Request
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            Nova versão! A versão **${{ env.versao_numero }}** está disponível!
+            Alterações:
+            ${{ env.LISTA_ALTERACOES }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
