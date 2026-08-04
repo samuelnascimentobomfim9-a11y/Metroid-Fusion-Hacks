@@ -64,7 +64,8 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            Nova versão! A versão **${{ env.VERSION_NUM }}** está disponível!
-            Alterações:
+            🤖 **Nova versão!** A versão **${{ env.VERSION_NUM }}** está disponível! 🚀
+            
+            ⚙️ **Alterações:**
             ${{ env.CHANGES_LIST }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
