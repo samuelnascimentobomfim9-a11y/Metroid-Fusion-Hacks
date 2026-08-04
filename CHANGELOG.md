@@ -70,7 +70,7 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ### Metroid Fusion Super Zer1
 
-#### [Beta] Não Lançado - ??/??/2026 
+#### [Beta] Não publicado - ??/??/2026 
 
 - Corrigido: Partes do Pause Screen.
 
@@ -104,7 +104,7 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ### Metroid Fusion X-Master Quest
 
-#### [Alpha] Não Lançado - ??/??/20?? 
+#### [Alpha] Não publicado - ??/??/20?? 
 
 - Aguardando alterações.
 
