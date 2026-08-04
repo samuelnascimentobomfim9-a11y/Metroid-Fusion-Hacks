@@ -11,7 +11,7 @@ Deve haver uma entrada para cada versão.
 - Alterações do mesmo tipo devem ser agrupadas. Versões e seções devem ser vinculáveis (com links).
 - A versão mais recente vem em primeiro lugar.
 - A data de lançamento de cada versão é exibida.
-- Mencione se você segue o (versionamento semântico)[https://semver.org/].
+- Mencione se você segue o [versionamento semântico](https://semver.org/).
 #### Tipos de mudanças
 - `Adicionado` para novas funcionalidades.
 - `Modificado` para alterações em funcionalidades existentes.
@@ -43,7 +43,7 @@ Quando pessoas atualizam de uma versão para outra, deve ficar muitíssimo claro
 Se você não fizer mais nada, liste no seu changelog as depreciações, remoções e quaisquer mudanças que gerem falhas.
 
 #### Datas confusas
-Os formatos regionais de data variam em todo o mundo e muitas vezes é difícil encontrar um formato de data amigável que seja intuitivo para todos. A vantagem das datas formatadas como `2017-07-17` é que elas seguem a ordem da maior para a menor unidade de tempo: ano, mês e dia. Este formato também não se confunde de maneira ambígua com outros formatos de data, ao contrário de alguns formatos regionais que alteram a posição dos números do mês e dia. Esses motivos, e o fato de ser um formato de data suportado pela (norma ISO)[https://www.iso.org/iso-8601-date-and-time-format.html] são as razões para ele ser o formato de data recomendado para as entradas do changelog.
+Os formatos regionais de data variam em todo o mundo e muitas vezes é difícil encontrar um formato de data amigável que seja intuitivo para todos. A vantagem das datas formatadas como `2017-07-17` é que elas seguem a ordem da maior para a menor unidade de tempo: ano, mês e dia. Este formato também não se confunde de maneira ambígua com outros formatos de data, ao contrário de alguns formatos regionais que alteram a posição dos números do mês e dia. Esses motivos, e o fato de ser um formato de data suportado pela [norma ISO](https://www.iso.org/iso-8601-date-and-time-format.html) são as razões para ele ser o formato de data recomendado para as entradas do changelog.
 
 #### Alterações Inconsistentes
 Um changelog que apenas menciona algumas das alterações pode ser tão perigoso quanto não ter um changelog. Enquanto muitas das alterações talvez não sejam relevantes - como por exemplo remover um único espaço em branco talvez não necessite ser registrado todas as vezes - qualquer alteração importante deve ser mencionada no changelog. Por registrar alterações de forma inconsistente, seus usuários podem pensar, incorretamente, que o changelog é a fonte única de verdade. Deveria ser. Com grandes poderes vem grandes responsabilidade - ter um bom changelog siginifica ter um changelog consistentemente atualizado.
