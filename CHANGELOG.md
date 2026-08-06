@@ -5,6 +5,16 @@ Todas as alterações relevantes deste projeto serão documentadas neste arquivo
 O formato é baseado no [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0.html).
 
+## Universal
+
+### 2026-08-05
+
+- Atualização para o MAGE Themes 1.19.1
+
+### 2026-07-10
+
+- Adicionado: Suporte pro MAGE Themes 1.16.0
+
 ## Lançados
 
 ### Metroid TX-267 SE
@@ -102,7 +112,6 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 - Adicionado: Revisão grámatical para os textos traduzidos
 - Adicionado: Tradução em PTBR nos 30 primeiros diálogos
-- Adicionado: Suporte pro MAGE Themes 1.16.0
 
 ### Metroid Fusion X-Master Quest
 
