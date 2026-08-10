@@ -80,8 +80,9 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ### Metroid Fusion Super Zer1
 
-#### [Beta] Não publicado - 2026-??-??
+#### [Beta] Não publicado - 2026-09-??
 
+- Corrigido: Minimapa na sala de navegação
 - Corrigido: Partes do Pause Screen.
 
 #### 『0.4.0』 - 2026-07-16
