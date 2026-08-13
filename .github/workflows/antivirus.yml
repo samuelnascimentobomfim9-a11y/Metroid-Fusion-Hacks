@@ -15,7 +15,16 @@ jobs:
       - name: Checkout Repository Code
         uses: actions/checkout@v4
 
-      - name: Install and Run ClamAV Scanner
-        uses: crazy-max/ghaction-clamav@v3
-        with:
-          update_defs: true
+      - name: Install ClamAV Tool
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clamav clamav-daemon
+
+      - name: Update Virus Signatures
+        run: |
+          sudo systemctl stop clamav-freshclam || true
+          sudo freshclam
+
+      - name: Run Malware Scan
+        run: |
+          clamscan --recursive --infected --exclude-dir="^\.git$" .
