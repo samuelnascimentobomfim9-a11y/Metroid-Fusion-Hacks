@@ -1,0 +1,21 @@
+name: "Antivirus Malware Scan"
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  clamav-scan:
+    name: "ClamAV Scan"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository Code
+        uses: actions/checkout@v4
+
+      - name: Install and Run ClamAV Scanner
+        uses: crazy-max/ghaction-clamav@v3
+        with:
+          update_defs: true
