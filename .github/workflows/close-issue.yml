@@ -11,13 +11,11 @@ jobs:
       issues: write
 
     steps:
-      # Waits for 1 week minus 5 minutes (167 hours and 55 minutes)
-      - name: Wait until 5 minutes before the 1-week deadline
-        run: |
-          sleep 167h
-          sleep 55m
+      # Step 1: Waits for 2 days (out of 3) before adding the label
+      - name: Wait for 2 days
+        run: sleep 2d
 
-      - name: Post warning and wait to close
+      - name: Add inactive label
         uses: actions/github-script@v7
         with:
           script: |
@@ -28,30 +26,38 @@ jobs:
             const issue = await github.rest.issues.get({ owner, repo, issue_number });
             
             if (issue.data.state === 'open') {
-              // 1. Posts the custom warning message 5 minutes before closing
+              // Adds the exact 'Issue inativa' label
+              await github.rest.issues.addLabels({
+                owner,
+                repo,
+                issue_number,
+                labels: ['Issue inativa']
+              });
+            }
+
+      # Step 2: Waits for the final 1 day before closing
+      - name: Wait for 1 final day
+        run: sleep 1d
+
+      - name: Post comment and close issue as completed
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue_number = context.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const issue = await github.rest.issues.get({ owner, repo, issue_number });
+            
+            if (issue.data.state === 'open') {
+              // 1. Posts your custom message
               await github.rest.issues.createComment({
                 owner,
                 repo,
                 issue_number,
                 body: "Este issue foi automaticamente marcado como obsoleto, uma vez que não registou atividade recente."
               });
-            }
 
-      # Waits the remaining 5 minutes
-      - name: Wait the final 5 minutes
-        run: sleep 5m
-
-      - name: Close issue as completed
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const issue_number = context.issue.number;
-            const owner = context.repo.owner;
-            const repo = context.repo.repo;
-
-            const issue = await github.rest.issues.get({ owner, repo, issue_number });
-            
-            if (issue.data.state === 'open') {
               // 2. Closes the issue and marks it explicitly as 'completed'
               await github.rest.issues.update({
                 owner,
