@@ -1,0 +1,63 @@
+name: "Issue Expiry Manager"
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  manage-expiry:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      # Waits for 1 week minus 5 minutes (167 hours and 55 minutes)
+      - name: Wait until 5 minutes before the 1-week deadline
+        run: |
+          sleep 167h
+          sleep 55m
+
+      - name: Post warning and wait to close
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue_number = context.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const issue = await github.rest.issues.get({ owner, repo, issue_number });
+            
+            if (issue.data.state === 'open') {
+              // 1. Posts the custom warning message 5 minutes before closing
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number,
+                body: "Este issue foi automaticamente marcado como obsoleto, uma vez que não registou atividade recente."
+              });
+            }
+
+      # Waits the remaining 5 minutes
+      - name: Wait the final 5 minutes
+        run: sleep 5m
+
+      - name: Close issue as completed
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue_number = context.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const issue = await github.rest.issues.get({ owner, repo, issue_number });
+            
+            if (issue.data.state === 'open') {
+              // 2. Closes the issue and marks it explicitly as 'completed'
+              await github.rest.issues.update({
+                owner,
+                repo,
+                issue_number,
+                state: 'closed',
+                state_reason: 'completed'
+              });
+            }
