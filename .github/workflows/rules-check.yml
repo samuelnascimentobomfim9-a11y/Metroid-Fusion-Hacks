@@ -8,6 +8,7 @@ on:
 
 jobs:
   rules:
+    name: rules
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -18,12 +19,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Install Danger
         run: npm install -g danger
 
       - name: Run Danger Rules Check
+        if: github.event_name == 'pull_request'
         run: danger ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
