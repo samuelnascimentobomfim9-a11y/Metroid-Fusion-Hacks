@@ -1,3 +1,4 @@
+
 # Changelog
 
 Todas as alterações relevantes deste projeto serão documentadas neste arquivo.
@@ -80,7 +81,11 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ### Metroid Fusion Super Zer1
 
-#### [Beta] Não publicado - 2026-09-??
+#### [Estável] Não publicado - 2026-09-??
+
+- Adicionado: Uma versão fácil, alterando o dano e vida dos inimigos.
+
+#### 『0.4.1』 - 2026-08-14
 
 - Modificado: Número da versão no File Screen.
 - Corrigido: Minimapa na sala de navegação
