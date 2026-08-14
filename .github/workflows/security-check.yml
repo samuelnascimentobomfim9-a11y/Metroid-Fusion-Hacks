@@ -1,0 +1,31 @@
+name: Security Scan
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for Secrets Leak
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get Changed Files
+        id: changed-files
+        uses: tj-actions/changed-files@v45
+
+      - name: Run VirusTotal Security Scan
+        uses: crazy-max/ghaction-virustotal@v5
+        if: steps.changed-files.outputs.any_changed == 'true'
+        with:
+          vt_api_key: ${{ secrets.VT_API_KEY }}
+          files: |
+            ${{ steps.changed-files.outputs.all_changed_files }}
