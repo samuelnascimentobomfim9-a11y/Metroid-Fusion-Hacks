@@ -1,0 +1,20 @@
+const fs = require('fs');
+const execSync = require('child_process').execSync;
+
+const commitMsg = fs.readFileSync('.git/COMMIT_EDITMSG', 'utf8').trim();
+const currentBranch = execSync('git rev-parse --abbrev-ref HEAD').toString().trim();
+
+try {
+  execSync('git config --get user.signingkey');
+} catch (error) {
+  console.error("❌ COMMIT ERROR: A GPG or SSH signature is strictly required by your GitHub ruleset.");
+  process.exit(1);
+}
+
+const localStatus = execSync('git status -uno').toString();
+if (localStatus.includes('diverged') || localStatus.includes('behind')) {
+  console.error("❌ COMMIT ERROR: A linear history and fast-forward update pattern are required.");
+  process.exit(1);
+}
+
+process.exit(0);
