@@ -5,7 +5,11 @@ Todas as alterações relevantes deste projeto serão documentadas neste arquivo
 O formato é baseado no [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0.html).
 
-## Universal
+## Geral
+
+### 2026-08-26
+
+- Adicionado: ASM do MARS (Randovania) de Metroid Fusion.
 
 ### 2026-08-05
 
@@ -54,7 +58,6 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 - Modificado: Atualização na tradução em PT-BR
 - Adicionado: Revisão gramatical dos textos traduzidos e nova tradução melhorada
-- Adicionado: Suporte pro MAGE Themes 1.16.0
 
 #### 『0.3.1』 - 2026-05-16
 
