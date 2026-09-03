@@ -39,10 +39,9 @@ jobs:
             printf "# Timeline\nTodas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com) serão documentadas neste arquivo.\n" > "$FILE"
           fi
 
-          # Gera o bloco novo com os espaçamentos exatos exigidos
-          printf "\n\n### %s\n\n- %s - Commit: [%s](%s)\n  - %s\n" "$DATE_HEADER" "$COMMIT_TITLE" "$SHA" "$URL" "$COMMIT_DESC" > new_entry.tmp
+          # Gera o bloco novo com a quebra de linha exatamente abaixo da data e das informações
+          printf "\n### %s\n\n- %s - Commit: [%s](%s)\n  - %s\n\n" "$DATE_HEADER" "$COMMIT_TITLE" "$SHA" "$URL" "$COMMIT_DESC" > new_entry.tmp
           
-          # Injeta o bloco novo logo abaixo da linha 2 do arquivo original (cabeçalho) de forma segura
           sed -i '2r new_entry.tmp' "$FILE"
           rm -f new_entry.tmp
 
@@ -64,7 +63,7 @@ jobs:
             printf "# Timeline\nTodas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com) serão documentadas neste arquivo.\n" > "$FILE"
           fi
 
-          printf "\n\n### %s\n\n- %s - Pull Request: [#%s](%s)\n  - %s\n" "$DATE_HEADER" "$PR_TITLE" "$NUMBER" "$URL" "$PR_BODY" > new_entry.tmp
+          printf "\n### %s\n\n- %s - Pull Request: [#%s](%s)\n  - %s\n\n" "$DATE_HEADER" "$PR_TITLE" "$NUMBER" "$URL" "$PR_BODY" > new_entry.tmp
           
           sed -i '2r new_entry.tmp' "$FILE"
           rm -f new_entry.tmp
@@ -72,7 +71,7 @@ jobs:
       - name: Commit and Push Timeline Changes
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@://github.com"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
           FILE="Commits timeline.md"
           if [ -f "$FILE" ]; then
