@@ -34,6 +34,76 @@ jobs:
             COMMIT_DESC="No description provided."
           fi
 
+          if [ ! -f "$FILE" ]; then
+            echo "# Timeline" > "$FILE"
+            echo "Todas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com) serão documentadas neste arquivo." >> "$FILE"
+          fi
+
+          # Cria a nova entrada isolada com as quebras de linha corretas
+          printf "\n### %s\n\n- %s - Commit: [%s](%s)\n  - %s\n" "$DATE_HEADER" "$COMMIT_TITLE" "$SHA" "$URL" "$COMMIT_DESC" > new_entry.tmp
+          
+          # Separa o cabeçalho original e o histórico antigo
+          head -n 2 "$FILE" > header.tmp
+          tail -n +3 "$FILE" > old_entries.tmp
+          
+          # Junta tudo na ordem certa: Cabeçalho -> Nova Entrada -> Histórico Antigo
+          cat header.tmp new_entry.tmp old_entries.tmp > "$FILE"
+          rm -f header.tmp new_entry.tmp old_entries.tmp
+
+      - name: Log Merged Pull Request
+        if: github.event_name == 'pull_request' && github.event.pull_request.merged == true
+        run: |
+          FILE="Commits timeline.md"
+          
+          DATE_HEADER=$(date -u -d "${{ github.event.pull_request.merged_at }}" +"%Y-%m-%d")
+          PR_TITLE="${{ github.event.pull_request.title }}"
+          NUMBER="${{ github.event.pull_request.number }}"
+          URL="${{ github.event.pull_request.html_url }}"
+          PR_BODY="${{ github.event.pull_request.body }}"
+          if [ -z "$PR_BODY" ]; then
+            PR_BODY="No pull request description provided."
+          fi
+
+          if [ ! -f "$FILE" ]; then
+            echo "# Timeline" > "$FILE"
+            echo "Todas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com) serão documentadas neste arquivo." >> "$FILE"
+          fi
+
+          printf "\n### %s\n\n- %s - Pull Request: [#%s](%s)\n  - %s\n" "$DATE_HEADER" "$PR_TITLE" "$NUMBER" "$URL" "$PR_BODY" > new_entry.tmp
+          
+          head -n 2 "$FILE" > header.tmp
+          tail -n +3 "$FILE" > old_entries.tmp
+          
+          cat header.tmp new_entry.tmp old_entries.tmp > "$FILE"
+          rm -f header.tmp new_entry.tmp old_entries.tmp
+
+      - name: Commit and Push Timeline Changes
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            AUTHOR_NAME="${{ github.event.head_commit.author.username }}"
+            if [ -z "$AUTHOR_NAME" ] || [ "$AUTHOR_NAME" = "null" ]; then
+              AUTHOR_NAME="${{ github.event.head_commit.author.name }}"
+            fi
+            AUTHOR_EMAIL="${{ github.event.head_commit.author.email }}"
+            ORIGINAL_MSG="${{ github.event.head_commit.message }}"
+          else
+            AUTHOR_NAME="${{ github.event.pull_request.user.login }}"
+            AUTHOR_EMAIL="${{ github.event.pull_request.user.id }}+${{ github.event.pull_request.user.login }}@://github.com"
+            ORIGINAL_MSG="Merge pull request #${{ github.event.pull_request.number }} from ${{ github.event.pull_request.head.ref }}"
+          fi
+
+          git config --global user.name "$AUTHOR_NAME"
+          git config --global user.email "$AUTHOR_EMAIL"
+          
+          FILE="Commits timeline.md"
+          if [ -f "$FILE" ]; then
+            git add "$FILE"
+            if ! git diff --staged --quiet; then
+              BOT_COMMIT_MSG="[$AUTHOR_NAME] {$ORIGINAL_MSG} [skip ci]"
+              git commit -m "$BOT_COMMIT_MSG"
+              git push
+            fi
+          fi
           # Se o arquivo não existir, cria o cabeçalho base estruturado
           if [ ! -f "$FILE" ]; then
             printf "# Timeline\nTodas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com) serão documentadas neste arquivo.\n" > "$FILE"
