@@ -2,7 +2,8 @@ name: Timeline Logger
 
 on:
   push:
-    branches: ["**"]
+    branches:
+      - '**'
   pull_request:
     types: [closed]
 
