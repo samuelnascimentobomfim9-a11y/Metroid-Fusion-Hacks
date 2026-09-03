@@ -7,6 +7,11 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ## Geral
 
+### 2026-09-03
+
+- Adicionado mapa de PNG para o Super Zer1
+- Atualização para o MAGE Themes v1.20.0
+
 ### 2026-08-26
 
 - Adicionado: ASM do MARS (Randovania) de Metroid Fusion.
@@ -86,7 +91,12 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 #### [Estável] Não publicado - 2026-09-??
 
 - Aguardando alterações.
-- Adicionado: Versão fácil (que não será corrigida em versões posteriores)
+- Adicionado: Mais Tiles de Laboratório em alguns lugares.
+- Adicionado: Versão fácil. Essa versão altera:
+  - Dano dos Inimigos.
+  - Vida (Alguns) dos inimigos.
+  - Vulnerabilidades dos Inimigos.
+  - Mais chance de dar X-Vermelho.
 
 #### 『0.4.1』 - 2026-07-16
 
@@ -125,7 +135,7 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ### Metroid Fusion X-Master Quest
 
-#### [Alpha] Não publicado - 20??-??-?? 
+#### [Alpha] Não publicado - 2026-??-?? 
 
 - Aguardando alterações.
 
