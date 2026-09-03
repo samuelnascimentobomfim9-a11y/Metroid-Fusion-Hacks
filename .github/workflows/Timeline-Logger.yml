@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main, master ]
   pull_request:
-    types: [closed]
+    types: [ closed ]
 
 permissions:
   contents: write
@@ -19,22 +19,31 @@ jobs:
           fetch-depth: 0
 
       - name: Log Push Commits
-        if: github.event_name == 'push' && !contains(github.event.head_commit.message, 'chore: update timeline')
-        run: |-
+        if: github.event_name == 'push'
+        run: |
           FILE="Commits timeline.md"
+          FULL_MSG="${{ github.event.head_commit.message }}"
+          
+          if echo "$FULL_MSG" | grep -q "chore: update timeline"; then
+            echo "Skipping timeline update commit to avoid loops."
+            exit 0
+          fi
+          
           DATE_HEADER=$(date -u -d "${{ github.event.head_commit.timestamp }}" +"%Y-%m-%d")
           SHA=$(echo "${{ github.sha }}" | cut -c1-7)
           URL="${{ github.event.head_commit.url }}"
-          FULL_MSG="${{ github.event.head_commit.message }}"
+          
           COMMIT_TITLE=$(echo "$FULL_MSG" | head -n 1)
           COMMIT_DESC=$(echo "$FULL_MSG" | tail -n +2 | grep -v '^$')
           if [ -z "$COMMIT_DESC" ]; then
             COMMIT_DESC="No description provided."
           fi
+
           if [ ! -f "$FILE" ]; then
             echo "# Timeline" > "$FILE"
             echo "Todas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com) serão documentadas neste arquivo." >> "$FILE"
           fi
+
           printf "\n### %s\n\n- %s - Commit: [%s](%s)\n  - %s\n" "$DATE_HEADER" "$COMMIT_TITLE" "$SHA" "$URL" "$COMMIT_DESC" > new_entry.tmp
           head -n 2 "$FILE" > header.tmp
           tail -n +3 "$FILE" > old_entries.tmp
@@ -43,8 +52,9 @@ jobs:
 
       - name: Log Merged Pull Request
         if: github.event_name == 'pull_request' && github.event.pull_request.merged == true
-        run: |-
+        run: |
           FILE="Commits timeline.md"
+          
           DATE_HEADER=$(date -u -d "${{ github.event.pull_request.merged_at }}" +"%Y-%m-%d")
           PR_TITLE="${{ github.event.pull_request.title }}"
           NUMBER="${{ github.event.pull_request.number }}"
@@ -53,13 +63,45 @@ jobs:
           if [ -z "$PR_BODY" ]; then
             PR_BODY="No pull request description provided."
           fi
+
           if [ ! -f "$FILE" ]; then
             echo "# Timeline" > "$FILE"
             echo "Todas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com) serão documentadas neste arquivo." >> "$FILE"
           fi
+
           printf "\n### %s\n\n- %s - Pull Request: [#%s](%s)\n  - %s\n" "$DATE_HEADER" "$PR_TITLE" "$NUMBER" "$URL" "$PR_BODY" > new_entry.tmp
           head -n 2 "$FILE" > header.tmp
           tail -n +3 "$FILE" > old_entries.tmp
+          cat header.tmp new_entry.tmp old_entries.tmp > "$FILE"
+          rm -f header.tmp new_entry.tmp old_entries.tmp
+
+      - name: Commit and Push Timeline Changes
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            AUTHOR_NAME="${{ github.event.head_commit.author.username }}"
+            if [ -z "$AUTHOR_NAME" ] || [ "$AUTHOR_NAME" = "null" ]; then
+              AUTHOR_NAME="${{ github.event.head_commit.author.name }}"
+            fi
+            AUTHOR_EMAIL="${{ github.event.head_commit.author.email }}"
+            ORIGINAL_MSG="${{ github.event.head_commit.message }}"
+          else
+            AUTHOR_NAME="${{ github.event.pull_request.user.login }}"
+            AUTHOR_EMAIL="${{ github.event.pull_request.user.id }}+${{ github.event.pull_request.user.login }}@://github.com"
+            ORIGINAL_MSG="Merge pull request #${{ github.event.pull_request.number }} from ${{ github.event.pull_request.head.ref }}"
+          fi
+
+          git config --global user.name "$AUTHOR_NAME"
+          git config --global user.email "$AUTHOR_EMAIL"
+          
+          FILE="Commits timeline.md"
+          if [ -f "$FILE" ]; then
+            git add "$FILE"
+            if ! git diff --staged --quiet; then
+              BOT_COMMIT_MSG="[$AUTHOR_NAME] {$ORIGINAL_MSG} [skip ci]"
+              git commit -m "$BOT_COMMIT_MSG"
+              git push
+            fi
+          fi
           cat header.tmp new_entry.tmp old_entries.tmp > "$FILE"
           rm -f header.tmp new_entry.tmp old_entries.tmp
 
