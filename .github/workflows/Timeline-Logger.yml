@@ -25,7 +25,7 @@ jobs:
           FILE="Commits timeline.md"
           FULL_MSG="${{ github.event.head_commit.message }}"
           
-          if echo "$FULL_MSG" | grep -q "chore: update timeline"; then
+          if echo "$FULL_MSG" | grep -q "skip ci"; then
             echo "Skipping timeline update commit to avoid loops."
             exit 0
           fi
@@ -45,7 +45,7 @@ jobs:
             echo "Todas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com) serão documentadas neste arquivo." >> "$FILE"
           fi
 
-          printf "\n### %s\n\n- %s - Commit: [%s](%s)\n  - %s\n" "$DATE_HEADER" "$COMMIT_TITLE" "$SHA" "$URL" "$COMMIT_DESC" > new_entry.tmp
+          printf "\n### %s\n\n- %s [Commit: [%s](%s)]\n  - %s\n" "$DATE_HEADER" "$COMMIT_TITLE" "$SHA" "$URL" "$COMMIT_DESC" > new_entry.tmp
           head -n 2 "$FILE" > header.tmp
           tail -n +3 "$FILE" > old_entries.tmp
           cat header.tmp new_entry.tmp old_entries.tmp > "$FILE"
@@ -70,7 +70,7 @@ jobs:
             echo "Todas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com) serão documentadas neste arquivo." >> "$FILE"
           fi
 
-          printf "\n### %s\n\n- %s - Pull Request: [#%s](%s)\n  - %s\n" "$DATE_HEADER" "$PR_TITLE" "$NUMBER" "$URL" "$PR_BODY" > new_entry.tmp
+          printf "\n### %s\n\n- %s [Pull Request: [#%s](%s)]\n  - %s\n" "$DATE_HEADER" "$PR_TITLE" "$NUMBER" "$URL" "$PR_BODY" > new_entry.tmp
           head -n 2 "$FILE" > header.tmp
           tail -n +3 "$FILE" > old_entries.tmp
           cat header.tmp new_entry.tmp old_entries.tmp > "$FILE"
@@ -96,7 +96,7 @@ jobs:
           if [ -f "$FILE" ]; then
             git add "$FILE"
             if ! git diff --staged --quiet; then
-              BOT_COMMIT_MSG="[$AUTHOR_NAME] {$ORIGINAL_MSG} [skip ci]"
+              BOT_COMMIT_MSG="[$AUTHOR_NAME] $ORIGINAL_MSG [skip ci]"
               git commit -m "$BOT_COMMIT_MSG"
               git push origin HEAD:${{ github.ref_name }}
             fi
