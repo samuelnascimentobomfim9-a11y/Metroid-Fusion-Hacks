@@ -1,0 +1,93 @@
+name: Timeline Logger
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+jobs:
+  log-timeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Log Push Commits
+        if: github.event_name == 'push' && !contains(github.event.head_commit.message, 'chore: update timeline')
+        run: |
+          FILE="Commits timeline.md"
+          
+          DATE_HEADER=$(date -u -d "${{ github.event.head_commit.timestamp }}" +"%Y-%m-%d")
+          SHA=$(echo "${{ github.sha }}" | cut -c1-7)
+          URL="${{ github.event.head_commit.url }}"
+          
+          FULL_MSG="${{ github.event.head_commit.message }}"
+          COMMIT_TITLE=$(echo "$FULL_MSG" | head -n 1)
+          COMMIT_DESC=$(echo "$FULL_MSG" | sed '1d' | grep -v '^$')
+          if [ -z "$COMMIT_DESC" ]; then
+            COMMIT_DESC="No description provided."
+          fi
+
+          NEW_ENTRY=$(cat <<EOF
+
+### $DATE_HEADER
+
+- $COMMIT_TITLE - Commit: [$SHA]($URL)
+  - $COMMIT_DESC
+
+EOF
+)
+          if [ ! -f "$FILE" ]; then
+            echo -e "# Timeline\nTodas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com) serão documentadas neste arquivo." > "$FILE"
+          fi
+
+          sed -i "s/.*Metroid-Fusion-Hacks) serão documentadas neste arquivo.*/&\n$NEW_ENTRY/" "$FILE"
+
+      - name: Log Merged Pull Request
+        if: github.event_name == 'pull_request' && github.event.pull_request.merged == true
+        run: |
+          FILE="Commits timeline.md"
+          
+          DATE_HEADER=$(date -u -d "${{ github.event.pull_request.merged_at }}" +"%Y-%m-%d")
+          PR_TITLE="${{ github.event.pull_request.title }}"
+          NUMBER="${{ github.event.pull_request.number }}"
+          URL="${{ github.event.pull_request.html_url }}"
+          PR_BODY="${{ github.event.pull_request.body }}"
+          if [ -z "$PR_BODY" ]; then
+            PR_BODY="No pull request description provided."
+          fi
+
+          NEW_ENTRY=$(cat <<EOF
+
+### $DATE_HEADER
+
+- $PR_TITLE - Pull Request: [#$NUMBER]($URL)
+  - $PR_BODY
+
+EOF
+)
+          if [ ! -f "$FILE" ]; then
+            echo -e "# Timeline\nTodas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com) serão documentadas neste arquivo." > "$FILE"
+          fi
+
+          sed -i "s/.*Metroid-Fusion-Hacks) serão documentadas neste arquivo.*/&\n$NEW_ENTRY/" "$FILE"
+
+      - name: Commit and Push Timeline Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@://github.com"
+          
+          FILE="Commits timeline.md"
+          if [ -f "$FILE" ]; then
+            git add "$FILE"
+            if ! git diff --staged --quiet; then
+              git commit -m "chore: update timeline logs [skip ci]"
+              git push
+            fi
+          fi
