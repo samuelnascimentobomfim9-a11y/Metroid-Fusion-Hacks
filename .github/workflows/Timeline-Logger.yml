@@ -2,8 +2,7 @@ name: Timeline Logger
 
 on:
   push:
-    branches:
-      - '**'
+    branches: [ main, master ]
   pull_request:
     types: [closed]
 
@@ -39,7 +38,6 @@ jobs:
             printf "# Timeline\nTodas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com) serão documentadas neste arquivo.\n" > "$FILE"
           fi
 
-          # Gera o bloco novo com a quebra de linha exatamente abaixo da data e das informações
           printf "\n### %s\n\n- %s - Commit: [%s](%s)\n  - %s\n\n" "$DATE_HEADER" "$COMMIT_TITLE" "$SHA" "$URL" "$COMMIT_DESC" > new_entry.tmp
           
           sed -i '2r new_entry.tmp' "$FILE"
@@ -70,24 +68,27 @@ jobs:
 
       - name: Commit and Push Timeline Changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if [ "${{ github.event_name }}" = "push" ]; then
+            AUTHOR_NAME="${{ github.event.head_commit.author.username }}"
+            if [ -z "$AUTHOR_NAME" ] || [ "$AUTHOR_NAME" = "null" ]; then
+              AUTHOR_NAME="${{ github.event.head_commit.author.name }}"
+            fi
+            AUTHOR_EMAIL="${{ github.event.head_commit.author.email }}"
+            ORIGINAL_MSG="${{ github.event.head_commit.message }}"
+          else
+            AUTHOR_NAME="${{ github.event.pull_request.user.login }}"
+            AUTHOR_EMAIL="${{ github.event.pull_request.user.id }}+${{ github.event.pull_request.user.login }}@://github.com"
+            ORIGINAL_MSG="Merge pull request #${{ github.event.pull_request.number }} from ${{ github.event.pull_request.head.ref }}"
+          fi
+
+          # Configura o Git usando os seus dados reais do commit anterior
+          git config --global user.name "$AUTHOR_NAME"
+          git config --global user.email "$AUTHOR_EMAIL"
           
           FILE="Commits timeline.md"
           if [ -f "$FILE" ]; then
             git add "$FILE"
             if ! git diff --staged --quiet; then
-              
-              if [ "${{ github.event_name }}" = "push" ]; then
-                AUTHOR_NAME="${{ github.event.head_commit.author.username }}"
-                if [ -z "$AUTHOR_NAME" ] || [ "$AUTHOR_NAME" = "null" ]; then
-                  AUTHOR_NAME="${{ github.event.head_commit.author.name }}"
-                fi
-                ORIGINAL_MSG="${{ github.event.head_commit.message }}"
-              else
-                AUTHOR_NAME="${{ github.event.pull_request.user.login }}"
-                ORIGINAL_MSG="Merge pull request #${{ github.event.pull_request.number }} from ${{ github.event.pull_request.head.ref }}"
-              fi
               
               BOT_COMMIT_MSG="[$AUTHOR_NAME] {$ORIGINAL_MSG} [skip ci]"
               
