@@ -27,7 +27,7 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ### Metroid Fusion Super Zer1
 
-#### [Estável] Não publicado - 2026-09-??
+#### 『1.0.0』 - 2026-09-05
 
 - Aguardando alterações.
 - Adicionado: Mais Tiles de Laboratório em alguns lugares.
