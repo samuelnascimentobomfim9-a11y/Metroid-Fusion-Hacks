@@ -3,6 +3,11 @@ Todas as alterações feita com commits (e pull requests) deste [Repositório](h
 
 ### 2026-09-05
 
+- Criar Releases.yml [Commit: [af62aba](https://github.com/samuelnascimentobomfim9-a11y/Metroid-Fusion-Hacks/commit/af62aba450181eff6ef38de70202ce867dac337c)]
+  - Signed-off-by: SamuelNB2026 <samuelnascimentobomfim9@gmail.com>
+
+### 2026-09-05
+
 - Corrigido versão do Changelog [Commit: [f8b4e94](https://github.com/samuelnascimentobomfim9-a11y/Metroid-Fusion-Hacks/commit/f8b4e94f30c3e40fec87b04dc80a35e34d97e6d4)]
   - Corrigido a versão que estava errada na parte do Super Zer1.
 Signed-off-by: SamuelNB2026 <samuelnascimentobomfim9@gmail.com>
