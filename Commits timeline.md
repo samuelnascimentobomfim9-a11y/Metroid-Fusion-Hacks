@@ -1,6 +1,11 @@
 # Timeline
 Todas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com/samuelnascimentobomfim9-a11y/Metroid-Fusion-Hacks) serão documentadas neste arquivo.
 
+### 2026-09-05
+
+- Nova versão do Super Zer1 disponivel! [Commit: [4cbd61c](https://github.com/samuelnascimentobomfim9-a11y/Metroid-Fusion-Hacks/commit/4cbd61c1faf149082556ab9a5958c4435b13d3a9)]
+  - Signed-off-by: SamuelNB2026 <samuelnascimentobomfim9@gmail.com>
+
 ### 2026-09-03
 
 - Atualizar Timeline-Logger.yml pela última vez [Commit: [9138cee](https://github.com/samuelnascimentobomfim9-a11y/Metroid-Fusion-Hacks/commit/9138ceed6bf7aa8501920f772af55596843b4fa7)]
