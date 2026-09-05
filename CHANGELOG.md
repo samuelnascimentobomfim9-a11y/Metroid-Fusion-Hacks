@@ -1,4 +1,3 @@
-
 # Changelog
 
 Todas as alterações relevantes deste projeto serão documentadas neste arquivo.
@@ -6,7 +5,15 @@ Todas as alterações relevantes deste projeto serão documentadas neste arquivo
 O formato é baseado no [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0.html).
 
-## Universal
+## Geral
+
+### 2026-09-03
+
+- Atualização para o MAGE Themes v1.20.0
+
+### 2026-08-26
+
+- Adicionado: ASM do MARS (Randovania) de Metroid Fusion.
 
 ### 2026-08-05
 
@@ -17,6 +24,52 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 - Adicionado: Suporte pro MAGE Themes 1.16.0
 
 ## Lançados
+
+### Metroid Fusion Super Zer1
+
+#### 『1.0.0』 - 2026-09-05
+
+- Adicionado: Mais Tiles de Laboratório em alguns lugares.
+- Adicionado: Versão fácil. Essa versão altera:
+  - Dano dos Inimigos.
+  - Vida (Alguns) dos inimigos.
+  - Vulnerabilidades dos Inimigos.
+  - Mais chance de dar X-Vermelho.
+
+#### 『0.4.1』 - 2026-07-16
+
+- Corrigido: Número da versão no File Screen.
+- Corrigido: Minimapa na sala de navegação
+- Corrigido: Partes do Pause Screen.
+
+#### 『0.4.0』 - 2026-07-16
+
+- Modificado: Finalização na Tradução em PT-BR.
+- Modificado: Atualizando os créditos.
+- Adicionado: Tradução do DeepL no Messages e Locations.
+- Adicionado: Novos Tiles para partes de Laboratório.
+- Corrigido: Minimapa; E colocado um novo com partes do ZM Return to Zebes no lugar.
+
+#### 『0.3.0』 - 2026-07-14
+
+- Modificado: Atualização na Tradução em PT-BR.
+- Corrigido: Textos na Navegation.
+- Corrigido: Versão no File Screen.
+
+#### 『0.2.1』 - 2026-07-11
+
+- Adicionado: Minimapa do "GRAVITY – Sylux’s Crusade" e "MF Special Edition".
+
+#### 『0.2.0』 - 2026-07-11
+
+- Modificado: Atualização na Tradução em PT-BR.
+- Adicionado: Tradução nos textos em chinês na Navegation; Pause Screeen e um no Monologues
+- Adicionado: Créditos finais e Ending traduzido.
+
+#### 『0.1.0』 - 2026-07-10
+
+- Adicionado: Revisão grámatical para os textos traduzidos
+- Adicionado: Tradução em PTBR nos 30 primeiros diálogos
 
 ### Metroid TX-267 SE
 
@@ -55,7 +108,6 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 - Modificado: Atualização na tradução em PT-BR
 - Adicionado: Revisão gramatical dos textos traduzidos e nova tradução melhorada
-- Adicionado: Suporte pro MAGE Themes 1.16.0
 
 #### 『0.3.1』 - 2026-05-16
 
@@ -79,50 +131,9 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ## Em desenvolvimento
 
-### Metroid Fusion Super Zer1
-
-#### [Estável] Não publicado - 2026-09-??
-
-- Adicionado: Uma versão fácil, alterando o dano e vida dos inimigos.
-
-#### 『0.4.1』 - 2026-08-14
-
-- Modificado: Número da versão no File Screen.
-- Corrigido: Minimapa na sala de navegação
-- Corrigido: Partes do Pause Screen.
-
-#### 『0.4.0』 - 2026-07-16
-
-- Modificado: Finalização na Tradução em PT-BR.
-- Modificado: Atualizando os créditos.
-- Adicionado: Tradução do DeepL no Messages e Locations.
-- Adicionado: Novos Tiles para partes de Laboratório.
-- Corrigido: Minimapa; E colocado um novo com partes do ZM Return to Zebes no lugar.
-
-#### 『0.3.0』 - 2026-07-14
-
-- Modificado: Atualização na Tradução em PT-BR.
-- Corrigido: Textos na Navegation.
-- Corrigido: Versão no File Screen.
-
-#### 『0.2.1』 - 2026-07-11
-
-- Adicionado: Minimapa do "GRAVITY – Sylux’s Crusade" e "MF Special Edition".
-
-#### 『0.2.0』 - 2026-07-11
-
-- Modificado: Atualização na Tradução em PT-BR.
-- Adicionado: Tradução nos textos em chinês na Navegation; Pause Screeen e um no Monologues
-- Adicionado: Créditos finais e Ending traduzido.
-
-#### 『0.1.0』 - 2026-07-10
-
-- Adicionado: Revisão grámatical para os textos traduzidos
-- Adicionado: Tradução em PTBR nos 30 primeiros diálogos
-
 ### Metroid Fusion X-Master Quest
 
-#### [Alpha] Não publicado - 20??-??-?? 
+#### [Alpha] Não publicado - 2026-??-?? 
 
 - Aguardando alterações.
 
