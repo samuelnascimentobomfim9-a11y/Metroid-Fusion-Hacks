@@ -1,0 +1,3 @@
+changelog:
+  render:
+    target: "> [!NOTE]\n> ### 📑 Meu Título Customizado\n> \n> Você pode conferir a lista completa de alterações e commits desse lançamento através do link oficial:\n> $CHANGELOG"
