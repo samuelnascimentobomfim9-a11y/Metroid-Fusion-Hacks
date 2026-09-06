@@ -3,6 +3,11 @@ Todas as alterações feita com commits (e pull requests) deste [Repositório](h
 
 ### 2026-09-06
 
+- Walljump adicionado na versão fácil [Commit: [071070b](https://github.com/samuelnascimentobomfim9-a11y/Metroid-Fusion-Hacks/commit/071070b65a46d5c33b949a8e3744273d6cd14d20)]
+  - Signed-off-by: SamuelNB2026 <samuelnascimentobomfim9@gmail.com>
+
+### 2026-09-06
+
 - Novas alterações futuras [Commit: [2d68333](https://github.com/samuelnascimentobomfim9-a11y/Metroid-Fusion-Hacks/commit/2d683331501219e4bdf45d02270e4c1bfb3b278c)]
   - Corrigido a versão fácil. E algumas modificações a mais.
 Signed-off-by: SamuelNB2026 <samuelnascimentobomfim9@gmail.com>
