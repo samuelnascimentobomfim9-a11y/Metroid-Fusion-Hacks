@@ -27,9 +27,15 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ### Metroid Fusion Super Zer1
 
+#### [Estável] Não publicado - 2026-09-?? 
+
+- Modificado: Velocidade do Missil.
+  - Alterado a Velociadade para a velocidade normal do Missil.
+  - OBS: Alteração somente para a Versão Fácil
+- Corrigido: Dano dos Inimigos e Vulnerabilidade.
+
 #### 『1.0.0』 - 2026-09-05
 
-- Aguardando alterações.
 - Adicionado: Mais Tiles de Laboratório em alguns lugares.
 - Adicionado: Versão fácil. Essa versão altera:
   - Dano dos Inimigos.
