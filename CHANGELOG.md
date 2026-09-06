@@ -29,6 +29,8 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 #### [Estável] Não publicado - 2026-09-?? 
 
+- Adicionado: Walljump.
+  - Na versão Fácil.
 - Modificado: Velocidade do Missil.
   - Alterado a Velociadade para a velocidade normal do Missil.
   - OBS: Alteração somente para a Versão Fácil
