@@ -169,4 +169,8 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ## Não Lançado
 
-- Aguardando hacks...
+### Nestroid: Zero Mission PTBR
+
+#### [Beta] Não publicado - 2026-11-?? 
+
+- Aguardando alterações.
