@@ -7,21 +7,38 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 
 ## Geral
 
+### 2026-09-16
+
+- Atualização para o [MAGE Themes v1.21.1](https://github.com/ConConner/MAGE-Themes/releases/tag/v1.21.1)
+  - 1.21.1
+    - **Bug Fixes**: debug toggle resets between tests in fusion test room settings ([7f7f638](https://github.com/ConConner/MAGE-Themes/commit/7f7f6381c2b98458bca0ce4feb6a5319379dbcc8))
+  - 1.21.0
+    - **Bug Fixes**: keyboard shortcuts get triggered when writing in textboxes ([9bef272](https://github.com/ConConner/MAGE-Themes/commit/9bef272fec3b0bcfe1b376b9df53d08d72daf6f2))
+    - **Features**: optionally allow sprite IDs up to 0xFF in spriteset editor ([f218285](https://github.com/ConConner/MAGE-Themes/commit/f2182857109a3e4aa9023ee64e3534806200ae01)); test room settings for fusion ([5b9d49a](https://github.com/ConConner/MAGE-Themes/commit/5b9d49a2140aba1f1c16ceace51230239e04df28)); warning system for incorrectly used clipdata ([459bf74](https://github.com/ConConner/MAGE-Themes/commit/459bf74678127c72be9bc50907efe85ee6162b88))
+
 ### 2026-09-03
 
-- Atualização para o MAGE Themes v1.20.0
+- Atualização para o [MAGE Themes v1.20.0](https://github.com/ConConner/MAGE-Themes/releases/tag/v1.20.0)
+  - **Bug Fixes**: project file config persists when switching to a ROM without project file ([b83afd3](https://github.com/ConConner/MAGE-Themes/commit/b83afd3dee59445a44492d864832e1ac88db9509)); room options resize always displays screen amount as decimal ([60d5445](https://github.com/ConConner/MAGE-Themes/commit/60d5445ce0b4c7dc991b1ffb2ff89e1190cade64))
+  - **Features**: cut and delete functionality in graphics editor [experimental] ([fb4d66c](https://github.com/ConConner/MAGE-Themes/commit/fb4d66ce5a8df10f42b56407496483eb69e64c31)); New Palette Editor [experimental] ([019322e](https://github.com/ConConner/MAGE-Themes/commit/019322ed033aa7c3965509fb6f726d9ca2be91ca))
 
 ### 2026-08-26
 
-- Adicionado: ASM do MARS (Randovania) de Metroid Fusion.
+- Adicionado ASM do MARS (Randovania) de Metroid Fusion.
 
 ### 2026-08-05
 
-- Atualização para o MAGE Themes 1.19.1
+- Atualização para o MAGE Themes [v1.19.1](https://github.com/ConConner/MAGE-Themes/releases/tag/v1.19.1)
+  - 1.19.1
+    - **Bug Fixes**: flipping in graphics editor while moving a selection does not flip the selection ([79522aa](https://github.com/ConConner/MAGE-Themes/commit/79522aaae5c776f22d6df0c43b91089383fccb0e))
+  - 1.19.0 
+    - **Bug Fixes**: mage crashes if any offset input box looses focus while containing an invalid HEX-number ([32bcee8](https://github.com/ConConner/MAGE-Themes/commit/32bcee8e775fb79a16c6d7c9e8b616b00afd5323))
+    - **Features**: added copy & paste functionality to graphics editor [experimental] ([fc2161b](https://github.com/ConConner/MAGE-Themes/commit/fc2161b9550a5a932f0eae70e84e8c5dea08ad4a)); added flip to graphics editor [experimental] ([b5fb592](https://github.com/ConConner/MAGE-Themes/commit/b5fb59221e0d0d9c22bbe4cb5b33a34a45ffb4a0)); hold shift to snap to grid in graphics editor [experimental] ([e42ef47](https://github.com/ConConner/MAGE-Themes/commit/e42ef47b7e8db988a33eb29b39f235772161f7e2)); selections can be moved in graphics editor [experimental] ([8a25de4](https://github.com/ConConner/MAGE-Themes/commit/8a25de42aee5df9a9e95b43a25d108c4b1e3c4dd))
 
 ### 2026-07-10
 
-- Adicionado: Suporte pro MAGE Themes 1.16.0
+- Adicionado suporte pro MAGE Themes [v1.16.0](https://github.com/ConConner/MAGE-Themes/releases/tag/v1.16.0)
+  - **Features**: moved new map editor out of experimental ([a223ec8](https://github.com/ConConner/MAGE-Themes/commit/a223ec8a1f6d4e86a2c5486d0e6fd1063f622728))
 
 ## Lançados
 
