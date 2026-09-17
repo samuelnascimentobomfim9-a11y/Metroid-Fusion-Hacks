@@ -174,3 +174,6 @@ e este projeto segue o [Versionamento Semântico](https://semver.org/spec/v2.0.0
 #### [Beta] Não publicado - 2026-11-?? 
 
 - Aguardando alterações.
+- Adicionado: Novas fotos de finais do Metroid do NES.
+- Adicionado: "Conquistas".
+- Adicionado: Tradução para o português
