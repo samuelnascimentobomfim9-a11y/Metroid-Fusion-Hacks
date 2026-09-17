@@ -1,6 +1,12 @@
 # Timeline
 Todas as alterações feita com commits (e pull requests) deste [Repositório](https://github.com/samuelnascimentobomfim9-a11y/Metroid-Fusion-Hacks) serão documentadas neste arquivo.
 
+### 2026-09-17
+
+- Atualizando o README.md [Commit: [04a672b](https://github.com/samuelnascimentobomfim9-a11y/Metroid-GBA-Hacks/commit/04a672b87f602917525a85fef8aaf934affef3f9)]
+  - Para ele se adptar as novas mudanças.
+Signed-off-by: SamuelNB2026 <samuelnascimentobomfim9@gmail.com>
+
 ### 2026-09-06
 
 - Walljump adicionado na versão fácil [Commit: [071070b](https://github.com/samuelnascimentobomfim9-a11y/Metroid-Fusion-Hacks/commit/071070b65a46d5c33b949a8e3744273d6cd14d20)]
